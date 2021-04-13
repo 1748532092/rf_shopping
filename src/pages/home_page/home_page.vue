@@ -2,72 +2,101 @@
 <template>
   <view>
     <view class="home_page_top">
+      <!-- 状态栏占位 -->
+      <view
+        class="statusBar"
+        :style="{ paddingTop: statusBarHeight + 'px' }"
+      ></view>
       <view class="search_scan">
-        <view>
-          <input class="input_box" placeholder="蔬菜" />
+        <view class="search_box">
           <view class="search_img">
-            <image class="iconfont iconsousuo"></image>
+            <view class="icon iconfont">&#xe647;</view>
           </view>
+          <input class="input_text" placeholder="蔬菜" />
         </view>
-        <view>
-          <image></image>
+        <view class="scan_img">
+          <text class="icon iconfont">&#xe78d;</text>
         </view>
       </view>
-      <scroll-view class="tab_list" scroll-x scroll-with-animation>
-        <view class="tab_item">家用电器</view>
-        <view class="tab_item">手机数码</view>
-        <view class="tab_item">玩具乐器</view>
-        <view class="tab_item">钟表珠宝</view>
-        <view class="tab_item">家用电器</view>
-        <view class="tab_item">手机数码</view>
-        <view class="tab_item">玩具乐器</view>
-        <view class="tab_item">钟表珠宝</view>
-      </scroll-view>
+      <view>
+        <scroll-view scroll-x="true" scroll-with-animation class="scroll_tab">
+          <block v-for="(item, index) in tabBars" :key="index">
+            <view
+              class="scroll_tab_item"
+              :class="{ active: tabIndex == index }"
+              @click="toggleTab(index)"
+            >
+              {{ item.name }}
+              <view class="scroll_tab_line"></view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+
+      <!-- 内容区 -->
+      <view class="content">
+        <!-- 滑块视图 -->
+        <swiper :current="tabIndex" @change="tabChange"
+          ><!-- current:当前所在滑块的index -->
+          <!-- <swiper-item v-for="(content, index) in contentList" :key="index">
+            <view class="content">{{ content }}</view>
+          </swiper-item> -->
+        </swiper>
+      </view>
     </view>
-	<!-- banner -->
-	<view class="home_page_banner">
-		<image class = "banner_img" src ="../../static/share/banner_one.png"></image>
-	</view>
+    <!-- banner -->
+    <view class="home_page_banner">
+      <image class="banner_img" src="../../static/share/banner_one.png"></image>
+    </view>
   </view>
 </template>
 
 <script>
 export default {
-  data: {
-    curTab: 0,
-    current: 0,
-    tabList: [
-      {
-        id: 1,
-        name: "家用电器",
-      },
-      {
-        id: 2,
-        name: "手机数码",
-      },
-      {
-        id: 3,
-        name: "玩具乐器",
-      },
-      {
-        id: 4,
-        name: "钟表珠宝",
-      },
-    ],
+  data() {
+    return {
+      // 状态栏高度
+      statusBarHeight: 0,
+      tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
+      contentList: ["首页", "家电用器", "男装", "手机", "玩具"],
+      tabBars: [
+        {
+          id: "1",
+          name: "首页",
+        },
+        {
+          id: "2",
+          name: "家电用器",
+        },
+        {
+          id: "3",
+          name: "男装",
+        },
+        {
+          id: "4",
+          name: "手机",
+        },
+        {
+          id: "5",
+          name: "玩具",
+        },
+      ],
+    };
+  }, //第一次加载时调用
+  created() {
+    //获取手机状态栏高度
+    this.statusBarHeight = uni.getSystemInfoSync()["statusBarHeight"];
   },
-  selectTab(e) {
-    let index = e.target.dataset.index;
-    this.setDate({
-      curTab: index,
-      current: index,
-    });
-  },
-  swiperChange(e) {
-    let index = e.detail.index;
-    this.setDate({
-      curTab: index,
-      current: index,
-    });
+  methods: {
+    //切换选项卡
+    toggleTab(index) {
+      this.tabIndex = index;
+    },
+    //滑动切换swiper
+    tabChange(e) {
+      console.log(e);
+      this.tabIndex = e.detail.current;
+    },
   },
 };
 </script>
@@ -79,56 +108,64 @@ export default {
   .search_scan {
     display: flex;
     justify-content: space-around;
+    vertical-align: middle;
     height: 60rpx;
-    width: 80%;
-    padding-top: 65rpx;
+    width: 550rpx;
+    padding-top: 10rpx;
     margin-bottom: 20rpx;
-    .input_box {
-      flex: 1;
+    .search_box {
+      display: flex;
       background: #fff;
       height: 60rpx;
       width: 100%;
       border-radius: 2em;
-      .search_img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        z-index: 2;
-      }
+      margin-left: 20rpx;
       .input_text {
-        font-size: 16rpx;
-        line-height: 1;
+        font-size: 26rpx;
+        margin: auto 0rpx;
+      }
+      .search_img {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 175rpx;
+        margin-right: 10rpx;
+        .iconfont {
+          font-size: 50rpx;
+          color: rgb(153, 141, 141);
+        }
+      }
+    }
+    .scan_img {
+      .iconfont {
+        line-height: 60rpx;
+        font-size: 70rpx;
+        color: white;
+        margin-left: 5rpx;
       }
     }
   }
-  .tab_list {
-    width: 100%;
-    height: 88rpx;
-    border-bottom: 1rpx solid #e5e5e5;
-    display: inline-block;
-    white-space: nowrap;
-    .tab_item {
-      width: 140rpx;
-      height: 85rpx;
-      display: inline-block;
-      line-height: 85rpx;
-      vertical-align: middle;
-      text-align: center;
-      margin: 0rpx 20rpx 10rpx 10rpx;
-    }
-    //切换时下划线
-    .selected_tab {
-      color: #1aae18;
-      border-bottom: 5rpx solid #1aae18;
-    }
+
+  .active {
+    color: #fff;
+    border-bottom: 5rpx solid white; 
   }
-  .home_page_banner{
-	
-	  .banner_img{
-		  height: 350rpx;
-	 	 width:100rpx;
-		  border-radius: 2em;
-	  }
+  .scroll_tab {
+    white-space: nowrap; /* 必要，导航栏才能横向*/
+  }
+  .scroll_tab_item {
+    display: inline-block; /* 必要，导航栏才能横向*/
+    margin: 10rpx 25rpx 0rpx 25rpx;
+    font-size: 28rpx;
+    color: #fff;
+    height: 47rpx;
+    text-align: center;
+  }
+  .home_page_banner {
+    .banner_img {
+      height: 350rpx;
+      width: 100rpx;
+      border-radius: 2em;
+    }
   }
 }
 </style>
