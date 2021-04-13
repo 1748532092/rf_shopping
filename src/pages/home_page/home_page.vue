@@ -41,24 +41,43 @@
           <!-- <swiper-item v-for="(content, index) in contentList" :key="index">
             <view class="content">{{ content }}</view>
           </swiper-item> -->
+          <swiper-item>
+            <homeTab>123456</homeTab>
+          </swiper-item>
+          <swiper-item>
+            <electricTab></electricTab>
+          </swiper-item>
+          <swiper-item>
+            <clothTab></clothTab>
+          </swiper-item>
+          <swiper-item>
+            <phoneTab></phoneTab>
+          </swiper-item>
         </swiper>
       </view>
     </view>
-    <!-- banner -->
-    <view class="home_page_banner">
-      <image class="banner_img" src="../../static/share/banner_one.png"></image>
-    </view>
+   
   </view>
 </template>
 
 <script>
+import electricTab from "../../components/electric";
+import homeTab from "../../components/home_page_tab";
+import clothTab from "../../components/men_cloth";
+import phoneTab from "../../components/phone";
 export default {
+  components: {
+    electricTab,
+    homeTab,
+    clothTab,
+    phoneTab,
+  },
   data() {
     return {
       // 状态栏高度
       statusBarHeight: 0,
       tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
-      contentList: ["首页", "家电用器", "男装", "手机", "玩具"],
+      contentList: ["首页", "家电用器", "男装", "手机"],
       tabBars: [
         {
           id: "1",
@@ -75,10 +94,6 @@ export default {
         {
           id: "4",
           name: "手机",
-        },
-        {
-          id: "5",
-          name: "玩具",
         },
       ],
     };
@@ -147,7 +162,7 @@ export default {
 
   .active {
     color: #fff;
-    border-bottom: 5rpx solid white; 
+    border-bottom: 5rpx solid white;
   }
   .scroll_tab {
     white-space: nowrap; /* 必要，导航栏才能横向*/
@@ -160,12 +175,6 @@ export default {
     height: 47rpx;
     text-align: center;
   }
-  .home_page_banner {
-    .banner_img {
-      height: 350rpx;
-      width: 100rpx;
-      border-radius: 2em;
-    }
-  }
+  
 }
 </style>
