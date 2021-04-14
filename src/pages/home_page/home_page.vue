@@ -36,7 +36,7 @@
       <!-- 内容区 -->
       <view class="content">
         <!-- 滑块视图 -->
-        <swiper style="height:2000rpx"  :current="tabIndex" @change="tabChange"
+        <swiper style="height:4000rpx"  :current="tabIndex" @change="tabChange"
           ><!-- current:当前所在滑块的index -->
           <!-- <swiper-item v-for="(content, index) in contentList" :key="index">
             <view class="content">{{ content }}</view>
