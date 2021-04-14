@@ -43,6 +43,7 @@
   "libVersion": "2.16.0",
   "appid": "wx5767ea8d902b2d2c",
   "projectname": "rf-shopping",
+  
   "debugOptions": {
     "hidedInDevtools": []
   },

@@ -36,13 +36,16 @@
       <!-- 内容区 -->
       <view class="content">
         <!-- 滑块视图 -->
-        <swiper :current="tabIndex" @change="tabChange"
+        <swiper style="height:2000rpx"  :current="tabIndex" @change="tabChange"
           ><!-- current:当前所在滑块的index -->
           <!-- <swiper-item v-for="(content, index) in contentList" :key="index">
             <view class="content">{{ content }}</view>
           </swiper-item> -->
-          <swiper-item>
-            <homeTab>123456</homeTab>
+          <swiper-item class="home_page_content">
+            <scroll-view scroll-x="true" style="height:100%"> 
+              <homeTab></homeTab>
+            </scroll-view>
+            
           </swiper-item>
           <swiper-item>
             <electricTab></electricTab>
@@ -119,7 +122,7 @@ export default {
 <style lang="less" scoped>
 .home_page_top {
   background: #fa436a;
-  height: 250rpx;
+  height: 200rpx;
   .search_scan {
     display: flex;
     justify-content: space-around;
@@ -159,7 +162,6 @@ export default {
       }
     }
   }
-
   .active {
     color: #fff;
     border-bottom: 5rpx solid white;
@@ -175,6 +177,11 @@ export default {
     height: 47rpx;
     text-align: center;
   }
-  
+}
+.content{
+  margin-top: 50rpx;
+  .home_page_content{
+     height: 350rpx;
+  }
 }
 </style>
