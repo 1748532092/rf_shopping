@@ -100,7 +100,8 @@ export default {
         },
       ],
     };
-  }, //第一次加载时调用
+  }, 
+  //第一次加载时调用
   created() {
     //获取手机状态栏高度
     this.statusBarHeight = uni.getSystemInfoSync()["statusBarHeight"];

@@ -1,58 +1,61 @@
 <template name="electricTab">
-<view>
-     <view class="empty">
-         <view class="icon iconfont">&#xe60e;</view>
-         <span>暂无该分类产品</span>
-     </view>
-       <view class="emty_recommend">
-        <span></span>
-        <p>为您推荐</p>
+  <view class="empty">
+    <view class="empty_content">
+      <view class="icon iconfont">&#xe60e;</view>
+      <view class="empty_text">暂无该分类产品~</view>
     </view>
-
-</view>
-    
+    <view class="empty_recommend">
+      <view class="liner"></view>
+      <view class="recommend_text">
+        <span>为您推荐</span>
+      </view>
+    </view>
+  </view>
 </template>
-<script>
-export default {
-    
-}
-</script>
-    <<style lang="less" scoped>
-    .empty{
-        
-        background: #fff;
-        height:500rpx;
-        
-        .iconfont{
-            height: 500rpx;
-            font-size: 200rpx;
-            color: red;
-             text-align:center;
-           line-height:500rpx;
-        }
-    }
-     .emty_recommend{
-         position:relative;
-         height:1.875rem;
-         line-height: 1.875rem;
-         margin:2.47rem auto;
-         text-align: center;
-         i{
-            display:block;
-            height:1px;
-            background:#e1e1e1;
-            position:absolute;
-            top:0.9rem;
-            width:100%;}
-         p{
-            display:inline-block;
-            font-size: 28rpx;
-            color:#c1c1c1;
-            text-align: center;
-            margin:0 auto;
-            position:relative;
-            z-index:2;
-            }
-     }
 
-    </style>
+<script>
+export default {};
+</script>
+    <style lang="less" scoped>
+.empty_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  margin-top: 100rpx;
+  .iconfont {
+    font-size: 200rpx;
+    color: red;
+  }
+  .empty_text {
+    margin-top: 40rpx;
+    font-size: 28rpx;
+    color: rgb(80, 75, 75);
+  }
+}
+.empty_recommend {
+  width: 400rpx;
+  height: 22px;
+  position: relative;
+  margin: 100rpx auto;
+}
+.liner {
+  width: 100%;
+  height: 1rpx;
+  background-color: #ccc;
+  position: relative;
+  top: 50%;
+}
+.recommend_text {
+  text-align: center;
+  width: 60px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 28rpx;
+  margin: 0 auto;
+  color: rgb(80, 75, 75);
+  background-color: #fff;
+  position: relative;
+  z-index: 3;
+}
+</style>

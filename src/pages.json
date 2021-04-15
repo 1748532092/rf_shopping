@@ -4,23 +4,33 @@
 		{
 			"path": "pages/home_page/home_page",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle":"custom"
 			}
 		},
 
 		//分类
 		{
-			"path":"pages/classification/classification"
+			"path":"pages/classification/classification",
+			"style":{
+				"navigationBarTitleText": "分类"
+			}
 		},
 
 		// 消息
 		{
-			"path":"pages/news/news"
+			"path":"pages/news/news",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+
 		},
 		
 		//购物车
 		{
-			"path":"pages/cart/cart"
+			"path":"pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
 		},
 		
 		//我的
@@ -33,8 +43,7 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"navigationStyle": "custom"
+		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar":{
 		"color": "#C0C4CC",

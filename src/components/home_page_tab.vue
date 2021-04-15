@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-14 09:03:28
- * @LastEditTime: 2021-04-14 17:43:52
+ * @LastEditTime: 2021-04-15 15:35:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\components\home_page_tab.vue
@@ -87,7 +87,7 @@
         </view>
       </view>
       <view class="new_products_content">
-        <view class="goods_item">
+        <view class="goods_item" v-for="items in 4" :key="items">
           <view class="show_img">
             <image class="goods_img" src="../static/goods.jpg"></image>
             <image class="goods_label" src="../static/pinkage.png"></image>
@@ -96,32 +96,6 @@
             >狗狗零食牛肉粒补钙除口臭训狗奖励小泰迪金毛幼犬小狗狗</view
           >
           <view>
-            <view class="selling_price">
-              <view class="selling_price_sign">¥</view>
-              <view class="selling_price_text">38</view>
-            </view>
-            <view class="original_price">
-                <view class="original_price_sign">¥</view>
-               <view class="original_price_text">45</view>
-            </view>
-          </view>
-          <view class="goods_sales">
-            <view style="display:inline">
-              <span>301</span>
-              <view class="sales_number">人付款</view>
-              </view>
-            <view class="icon iconfont">&#xe602; </view>
-          </view>
-        </view>
-         <view class="goods_item">
-          <view class="show_img">
-            <image class="goods_img" src="../static/goods.jpg"></image>
-            <image class="goods_label" src="../static/pinkage.png"></image>
-          </view>
-          <view class="goods_name"
-            >狗狗零食牛肉粒补钙除口臭训狗奖励小泰迪金毛幼犬小狗狗</view
-          >
-          <view style="padding:auto 20rpx">
             <view class="selling_price">
               <view class="selling_price_sign">¥</view>
               <view class="selling_price_text">38</view>
@@ -153,9 +127,9 @@ export default {
 <style lang="less" scoped>
 .banner {
   display: flex;
-  width: 90%;
-  height: 200px;
-  margin: 20rpx auto;
+  width: 640rpx;
+  height: 300rpx;
+  margin: auto;
   overflow: hidden;
   border-radius: 15rpx;
   position: relative;
@@ -205,7 +179,7 @@ li {
   }
   .notice_text {
     display: flex;
-    width: 600rpx; /*单行显示，超出隐藏*/
+    width: 590rpx; /*单行显示，超出隐藏*/
     height: 80rpx; /*固定公告栏显示区域的高度*/
     overflow: hidden;
     position: relative;
@@ -230,20 +204,19 @@ li {
 }
 .show {
   display: flex;
-  width: 90%;
   margin: 0 auto;
   .bargain_img {
-    height: 420rpx;
-    width: 320rpx;
-    margin-right: 20rpx;
+    height: 350rpx;
+    width: 300rpx;
+    margin:0 20rpx 0 30rpx;
   }
   .group_img {
-    height: 200rpx;
-    width: 320rpx;
+    height: 170rpx;
+    width: 370rpx;
   }
   .discount_img {
-    height: 200rpx;
-    width: 320rpx;
+    height: 170rpx;
+    width: 370rpx;
   }
 }
 .bargain_img {
@@ -252,13 +225,15 @@ li {
 }
 .active_img {
   height: 200rpx;
-  width: 660rpx;
+  width: 690rpx;
   margin: 20rpx 30rpx;
 }
 .new_products_modules {
   .new_products_top {
     display: flex;
     position: relative;
+    border-bottom:1rpx solid rgb(206, 194, 194);
+    padding-bottom: 20rpx;
     .iconfont {
       margin: auto 30rpx;
       color: rgb(241, 70, 176);
@@ -284,9 +259,10 @@ li {
   }
   .new_products_content {
     display: flex;
-    width: 300rpx;
+    flex-wrap: wrap;
+    justify-content: space-around;
     .goods_item {
-      margin: 20rpx;
+      margin-top: 30rpx;
       .show_img {
         display: flex;
         height: 300rpx;
@@ -328,7 +304,6 @@ li {
           display: inline;
           font-size: 30rpx;
           color: red;
-         
         }
       }
       .original_price{
@@ -355,7 +330,6 @@ li {
              font-size: 26rpx;
           }
         .sales_number{
-
           display: inline;
           font-size: 26rpx;
         }
