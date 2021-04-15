@@ -8,19 +8,12 @@
 -->
 <template>
    <view>
-       <view>
-           <view
-        class="statusBar"
-        :style="{ paddingTop: statusBarHeight + 'px' }"
-      ></view>
-        <view class="nav_title">分类</view>
-       </view>
        <view class="search_row">
        <view class="sort_icon">
            <view class="icon iconfont">&#xe60e;</view>
        </view>
        <view class="search_box">
-           <input placeholder="蔬菜"/>
+           <input class="input_text" placeholder="蔬菜"/>
            <view class="icon iconfont">&#xe647;</view>
        </view>
        </view>
@@ -31,28 +24,44 @@
 export default {
     date(){
         return{
-             // 状态栏高度
-      statusBarHeight: 0,
+      
         }
     },
- //第一次加载时调用
-  created() {
-    //获取手机状态栏高度
-    this.statusBarHeight = uni.getSystemInfoSync()["statusBarHeight"];
-    console.log(this.statusBarHeight)
-  },
+ 
 }
 
 </script>
 
 <style lang="less" scoped>
-.nav_title{
-    font-size: 30RPX;
-    text-align: center;
-}
- .search_row{
-    .sort_icon{
 
+ .search_row{
+    display: flex;
+    margin: 10rpx 15rpx;
+    .sort_icon{
+      .iconfont{
+        color: red;
+        line-height: 60rpx;
+      }
+    }
+    .search_box{
+      background: #f5f5f5;
+      display: flex;
+      border-radius: 2em;
+      width: 675rpx;
+      height: 60rpx;
+      margin-left: 10rpx;
+       line-height: 60rpx;
+      .input_text{
+        height: 100%;
+        width: 100%;
+         font-size: 26rpx;
+         color: #888;
+         padding-left: 20rpx;
+      }
+      .iconfont{
+      
+        padding-right: 20rpx;
+      }
     }
  }
 </style>

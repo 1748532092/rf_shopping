@@ -12,7 +12,9 @@
 		{
 			"path":"pages/classification/classification",
 			"style":{
-				"navigationBarTitleText": "分类"
+				"navigationBarTitleText": "分类",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
 			}
 		},
 
@@ -20,7 +22,9 @@
 		{
 			"path":"pages/news/news",
 			"style": {
-				"navigationBarTitleText": "消息"
+				"navigationBarTitleText": "消息",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
 			}
 
 		},
@@ -29,22 +33,21 @@
 		{
 			"path":"pages/cart/cart",
 			"style": {
-				"navigationBarTitleText": "购物车"
+				"navigationBarTitleText": "购物车",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
 			}
 		},
 		
 		//我的
 		{
-			"path":"pages/user/user"
+			"path":"pages/user/user",
+			"style": {
+				"navigationStyle":"custom"
+			}
 		}
 	],
 
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
 	"tabBar":{
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",

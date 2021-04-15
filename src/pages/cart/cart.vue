@@ -9,9 +9,9 @@
 <template>
   <view class="unlog_cart">
       <view class="icon iconfont">&#xe697;</view>
-      <view>
-          <text>空空如也</text>
-          <text>登录/注册></text>
+      <view class="txt">
+          <text class="empty_text">空空如也</text>
+          <text class="lod_text">登录/注册></text>
       </view>
   </view>
 </template>
@@ -26,9 +26,22 @@ export default {
 .unlog_cart{
     padding-top: 50%;
     .iconfont{
-        font-size: 200rpx;
+        font-size: 150rpx;
         color: red;
         text-align: center;
     }
+    .txt{
+        margin-top: 20rpx;
+        font-size: 26rpx;
+        text-align: center;
+        .empty_text{
+            color:rgb(204, 197, 197);
+    }
+    .lod_text{
+           margin-left: 10rpx;
+            color: rgb(238, 66, 75);
+    }
+    }
+    
 }
 </style>
