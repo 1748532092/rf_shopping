@@ -47,7 +47,10 @@
 			}
 		}
 	],
-
+	// "globalStyle":{
+	// 	"navigationBarTextStyle": "black",
+	// 			"navigationBarBackgroundColor": "#fff"
+	// },
 	"tabBar":{
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",
