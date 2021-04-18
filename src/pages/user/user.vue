@@ -94,7 +94,7 @@
           </view>
         </view>
       </view>
-       <view class="account_module">
+      <view class="account_module">
         <view class="account_title">
           <text class="icon iconfont">&#xe73b;</text>
           <text class="title">我的服务</text>
@@ -113,18 +113,30 @@
           </view>
           <view class="item">
             <view class="icon iconfont">&#xe641;</view>
-            <view class="name">待收货</view>
+            <view class="name">地址管理</view>
           </view>
+        </view>
+        <view class="account_text">
           <view class="item">
             <view class="icon iconfont">&#xe639;</view>
-            <view class="name">地址管理</view>
+            <view class="name">我的收藏</view>
           </view>
           <view class="item">
             <view class="icon iconfont">&#xe85d;</view>
-            <view class="name">我的收藏</view>
+            <view class="name">分享</view>
+          </view>
+           <view class="item">
+            <view class="icon iconfont">&#xe85d;</view>
+            <view class="name">直播</view>
           </view>
         </view>
-      </view> 
+         <view class="account_text">
+          <view class="item">
+            <view class="icon iconfont">&#xe639;</view>
+            <view class="name">设置</view>
+          </view>
+         </view>
+      </view>
     </view>
   </view>
 </template>
@@ -218,11 +230,11 @@ export default {};
     background-color: #fff;
     margin-bottom: 20rpx;
     height: 200rpx;
+
     .account_title {
       display: flex;
-      width: 100%;
       height: 50rpx;
-      padding-bottom: 20rpx;
+      padding: 20rpx 30rpx;
       border-bottom: 1rpx solid #f8f8f8;
       position: relative;
       line-height: 70rpx;
@@ -239,7 +251,7 @@ export default {};
         .iconfont {
           display: inline;
           position: absolute;
-          right: 0;
+          right: 50rpx;
           font-size: 30rpx;
           color: #606266;
         }

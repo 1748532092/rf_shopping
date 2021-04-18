@@ -45,8 +45,35 @@
 			"style": {
 				"navigationStyle":"custom"
 			}
+		},
+		//登录页面
+		{
+			"path":"pages/more_pages/login",
+			"style": {
+				"navigationBarTitleText": "登录页面",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//已有账号页面
+		{
+			"path":"pages/more_pages/existing_account",
+			"style": {
+					"navigationBarTextStyle": "black",
+				"navigationStyle":"custom"
+			}
+		},
+		//注册页面
+		{
+			"path":"pages/more_pages/register",
+			"style": {
+					"navigationBarTextStyle": "black",
+				"navigationStyle":"custom"
+			}
 		}
+
 	],
+	
 	// "globalStyle":{
 	// 	"navigationBarTextStyle": "black",
 	// 			"navigationBarBackgroundColor": "#fff"
