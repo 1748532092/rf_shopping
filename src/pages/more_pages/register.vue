@@ -2,7 +2,7 @@
   <view>
     <view class="existing_account_login">
       <view class="login_top">
-        <text class="icon iconfont">&#xe62e;</text>
+        <text class="icon iconfont">&#xe628;</text>
         <view class="describe">
           <view class="title">Hi~</view>
           <text>RF商城欢迎您</text>
@@ -18,12 +18,29 @@
           </view>
           <view class="login_form">
             <view class="input_item">
-              <text class="icon iconfont">&#xe709;</text>
+              <text class="icon iconfont">&#xe7aa;</text>
               <input class="input_text" placeholder="请输入手机号码" />
             </view>
             <view class="input_item">
-              <text class="icon iconfont">&#xe608;</text>
+              <text class="icon iconfont">&#xe6c3;</text>
+              <view class="input_content">
+                <view>
+                  <input class="input_text" placeholder="请输入验证码" />
+                </view>
+                <button class="get_verification_code">获取验证码</button>
+              </view>
+            </view>
+            <view class="input_item">
+              <text class="icon iconfont">&#xe682;</text>
               <input class="input_text" placeholder="请输入密码" />
+            </view>
+             <view class="input_item">
+              <text class="icon iconfont">&#xe682;</text>
+              <input class="input_text" placeholder="请输入确认密码" />
+            </view>
+             <view class="input_item">
+              <text class="icon iconfont">&#xe63e;</text>
+              <input class="input_text" placeholder="请输入昵称" />
             </view>
           </view>
           <button class="login_btn">注册</button>
@@ -48,7 +65,6 @@ export default {};
     .iconfont {
       position: absolute;
       left: 40rpx;
-      z-index: 9999;
       padding-top: 25px;
       top: 40rpx;
       font-size: 48rpx;
@@ -73,7 +89,7 @@ export default {};
     top: -72rpx;
     .login_content_bg {
       width: 94vw;
-      height: 94vw;
+      height: 150vw;
       margin: 0 3vw;
     }
     .main_content {
@@ -115,6 +131,7 @@ export default {};
             left: 0;
             color: #fa436a;
             line-height: 90rpx;
+            font-size: 50rpx;
           }
           .input_text {
             height: 90rpx;
@@ -125,6 +142,24 @@ export default {};
             text-overflow: clip;
             overflow: hidden;
             white-space: nowrap;
+          }
+          .input_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .get_verification_code {
+              width: 200rpx;
+              height: 80rpx;
+              background-color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 12rpx;
+              font-size: 28rpx;
+              color: #606266;
+              line-height: 80rpx;
+              padding: 15rpx 0;
+            }
           }
         }
       }

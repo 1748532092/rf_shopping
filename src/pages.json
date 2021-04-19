@@ -68,7 +68,26 @@
 			"path":"pages/more_pages/register",
 			"style": {
 					"navigationBarTextStyle": "black",
-				"navigationStyle":"custom"
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的账户页面
+		{
+			"path":"pages/user/my_account",
+			"style": {
+				"navigationBarTitleText": "我的账户",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的订单页面
+		{
+			"path":"pages/user/my_order",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
 			}
 		}
 

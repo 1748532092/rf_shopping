@@ -2,7 +2,7 @@
   <view>
     <view class="existing_account_login">
       <view class="login_top">
-        <text class="icon iconfont">&#xe62e;</text>
+        <text class="icon iconfont">&#xe628;</text>
         <view class="describe">
           <view class="title">Hi~</view>
           <text>RF商城欢迎您</text>
@@ -18,11 +18,11 @@
           </view>
           <view class="login_form">
             <view class="input_item">
-              <text class="icon iconfont">&#xe709;</text>
+              <text class="icon iconfont">&#xe643;</text>
               <input class="input_text" placeholder="请输入手机号码" />
             </view>
             <view class="input_item">
-              <text class="icon iconfont">&#xe608;</text>
+              <text class="icon iconfont">&#xe682;</text>
               <input class="input_text" placeholder="请输入密码" />
             </view>
           </view>
@@ -121,6 +121,7 @@ export default {};
             left: 0;
             color: #fa436a;
             line-height: 90rpx;
+            font-size: 50rpx;
           }
           .input_text {
             height: 90rpx;

@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 2482072 */
-  src: url('https://at.alicdn.com/t/font_2482072_9flvildkmro.eot');
-  src: url('https://at.alicdn.com/t/font_2482072_9flvildkmro.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_2482072_9flvildkmro.woff2') format('woff2'),
-  url('https://at.alicdn.com/t/font_2482072_9flvildkmro.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_2482072_9flvildkmro.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_2482072_9flvildkmro.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_2482072_rsejosrw9ff.eot');
+  src: url('https://at.alicdn.com/t/font_2482072_rsejosrw9ff.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_2482072_rsejosrw9ff.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/font_2482072_rsejosrw9ff.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_2482072_rsejosrw9ff.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_2482072_rsejosrw9ff.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -14,6 +14,86 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.iconsiyecao1:before {
+  content: "\e611";
+}
+
+.icondaishouhuo1:before {
+  content: "\e612";
+}
+
+.iconpingjia:before {
+  content: "\e78a";
+}
+
+.icondaishouhuo2:before {
+  content: "\e654";
+}
+
+.icondaishouhuo3:before {
+  content: "\e6e2";
+}
+
+.iconicon:before {
+  content: "\e63e";
+}
+
+.iconyanzhengma:before {
+  content: "\e6c3";
+}
+
+.icontongyong-yonghumingtubiao:before {
+  content: "\e643";
+}
+
+.iconhuabanfuben:before {
+  content: "\e692";
+}
+
+.icontupianyanzhengma:before {
+  content: "\e620";
+}
+
+.icondianhua-3:before {
+  content: "\e794";
+}
+
+.icondianhua-2:before {
+  content: "\e7aa";
+}
+
+.iconxiaoyuhao:before {
+  content: "\e628";
+}
+
+.iconyonghu:before {
+  content: "\e782";
+}
+
+.iconmima:before {
+  content: "\e682";
+}
+
+.iconweixin:before {
+  content: "\e68a";
+}
+
+.icon_yuanhuanchong:before {
+  content: "\e60f";
+}
+
+.iconyuan:before {
+  content: "\e610";
+}
+
+.iconzuji1:before {
+  content: "\e648";
+}
+
+.iconzuji2:before {
+  content: "\e908";
 }
 
 .icondaifahuo:before {
