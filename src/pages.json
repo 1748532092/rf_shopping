@@ -89,8 +89,25 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
+		},
+		//我的足迹页面
+		{
+			"path":"pages/user/my_footprint",
+			"style": {
+				"navigationBarTitleText": "我的足迹",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+			//我的服务 — 设置页面
+		{
+			"path":"pages/user/install/main",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
 		}
-
 	],
 	
 	// "globalStyle":{

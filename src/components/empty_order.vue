@@ -1,11 +1,4 @@
-<!--
- * @Author: your name
- * @Date: 2021-04-19 15:10:21
- * @LastEditTime: 2021-04-19 16:52:43
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\components\empty.vue
--->
+
 <template name="empty">
   <view class="empty">
     <view class="empty_content">

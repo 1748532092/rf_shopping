@@ -1,6 +1,6 @@
 <template name="product_list">
   <view class="products_content">
-    <view class="goods_item" v-for="items in 4" :key="items">
+    <view class="goods_item" v-for="items in 6" :key="items">
       <view class="show_img">
         <image class="goods_img" src="../static/goods.jpg"></image>
         <image class="goods_label" src="../static/pinkage.png"></image>

@@ -1,49 +1,54 @@
-<!--
- * @Author: your name
- * @Date: 2021-04-19 14:39:13
- * @LastEditTime: 2021-04-19 18:29:29
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\pages\user\my_order.vue
--->
+
 <template>
   <view class="my_order">
     <view class="search_box">
       <view class="search_input">请输入订单关键字</view>
       <text class="icon iconfont">&#xe647;</text>
     </view>
-     <view>
-        <scroll-view scroll-x="true" scroll-with-animation class="scroll_tab">
-          <block v-for="(item, index) in tabBars" :key="index">
-            <view
-              class="scroll_tab_item"
-              :class="{ active: tabIndex == index }"
-              @click="toggleTab(index)"
-            >
-              {{ item.name }}
-              <view class="scroll_tab_line"></view>
-            </view>
-          </block>
-        </scroll-view>
-      </view>
-    <swiper class="swiper_box">
+    <view>
+      <scroll-view scroll-x="true" scroll-with-animation class="scroll_tab">
+        <block v-for="(item, index) in tabBars" :key="index">
+          <view
+            class="scroll_tab_item"
+            :class="{ active: tabIndex == index }"
+            @click="toggleTab(index)"
+          >
+            {{ item.name }}
+            <view class="scroll_tab_line"></view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+    <swiper class="swiper_box" :current="tabIndex" @change="tabChange">
       <swiper-item class="item">
-        <scroll-view  scroll-y="true" class="content">
+        <scroll-view scroll-y="true" class="content">
           <empty></empty>
         </scroll-view>
+      </swiper-item>
+      <swiper-item>
+        <empty></empty>
+      </swiper-item>
+      <swiper-item>
+        <empty></empty>
+      </swiper-item>
+      <swiper-item>
+        <empty></empty>
+      </swiper-item>
+      <swiper-item>
+        <empty></empty>
       </swiper-item>
     </swiper>
   </view>
 </template>
 <script>
-import empty from "../../components/empty.vue";
+import empty from "../../components/empty_order.vue";
 export default {
   components: {
     empty,
   },
-  data(){
-      return{
-          tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
+  data() {
+    return {
+      tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
       tabBars: [
         {
           id: "1",
@@ -61,14 +66,14 @@ export default {
           id: "4",
           name: "待收货",
         },
-         {
+        {
           id: "5",
           name: "评价",
         },
       ],
-      }
+    };
   },
-   methods: {
+  methods: {
     //切换选项卡
     toggleTab(index) {
       this.tabIndex = index;
@@ -79,7 +84,6 @@ export default {
       this.tabIndex = e.detail.current;
     },
   },
-
 };
 </script>
 <style lang="less" scoped>
@@ -108,7 +112,7 @@ export default {
     }
   }
   .active {
-    color: #fa436a;
+    color: #fa436a im !important;
     border-bottom: 5rpx solid #fa436a;
   }
   .scroll_tab {
@@ -126,35 +130,11 @@ export default {
     text-align: center;
   }
 
-//   .navigation_bar {
-//     display: flex;
-//     height: 80rpx;
-//     padding: 0 10rpx;
-//     background: #fff;
-//     position: relative;
-//     margin: 10rpx auto;
-//     .nav_item {
-//       flex: 1;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       height: 100%;
-//       position: relative;
-//       font-size: 36rpx;
-//     }
-//     .active {
-//       color: #fa436a;
-//       border-bottom: 2rpx solid #fa436a;
-//       position: relative;
-//     z-index: 1;
-//     }
-//   }
   .swiper_box {
-      height:calc(100% - 160rpx);
-    .content{
-        height: 100%;
+    height: calc(100% - 170rpx);
+    .content {
+      height: 100%;
     }
   }
-
 }
 </style>
