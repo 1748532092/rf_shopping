@@ -9,12 +9,12 @@
       <scroll-view scroll-x="true" scroll-with-animation class="scroll_tab">
         <block v-for="(item, index) in tabBars" :key="index">
           <view
-            class="scroll_tab_item"
             :class="{ active: tabIndex == index }"
+             class="scroll_tab_item"
             @click="toggleTab(index)"
           >
             {{ item.name }}
-            <view class="scroll_tab_line"></view>
+            <!-- <view class="scroll_tab_line"></view> -->
           </view>
         </block>
       </scroll-view>
@@ -25,17 +25,25 @@
           <empty></empty>
         </scroll-view>
       </swiper-item>
-      <swiper-item>
-        <empty></empty>
+      <swiper-item class="item">
+        <scroll-view scroll-y="true" class="content">
+          <empty></empty>
+        </scroll-view>
       </swiper-item>
-      <swiper-item>
-        <empty></empty>
+      <swiper-item class="item">
+        <scroll-view scroll-y="true" class="content">
+          <empty></empty>
+        </scroll-view>
       </swiper-item>
-      <swiper-item>
-        <empty></empty>
+      <swiper-item class="item">
+        <scroll-view scroll-y="true" class="content">
+          <empty></empty>
+        </scroll-view>
       </swiper-item>
-      <swiper-item>
-        <empty></empty>
+      <swiper-item class="item">
+        <scroll-view scroll-y="true" class="content">
+          <empty></empty>
+        </scroll-view>
       </swiper-item>
     </swiper>
   </view>
@@ -87,6 +95,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
+
 .my_order {
   background: #f8f8f8;
   height: 100%;
@@ -112,7 +121,7 @@ export default {
     }
   }
   .active {
-    color: #fa436a im !important;
+    color: #fa436a ;
     border-bottom: 5rpx solid #fa436a;
   }
   .scroll_tab {
@@ -125,13 +134,16 @@ export default {
     display: inline-block; /* 必要，导航栏才能横向*/
     margin: 10rpx 25rpx 0rpx 30rpx;
     font-size: 36rpx;
-    color: rgb(54, 49, 49);
+  //  color: rgb(54, 49, 49);
     height: 50rpx;
     text-align: center;
   }
 
   .swiper_box {
     height: calc(100% - 170rpx);
+    .item{
+      overflow: auto;
+    }
     .content {
       height: 100%;
     }

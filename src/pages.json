@@ -59,7 +59,7 @@
 		{
 			"path":"pages/more_pages/existing_account",
 			"style": {
-					"navigationBarTextStyle": "black",
+				"navigationBarTextStyle": "black",
 				"navigationStyle":"custom"
 			}
 		},
@@ -107,13 +107,92 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
-		}
+		},
+		//我的服务 — 设置——个人资料页面
+		{
+			"path":"pages/user/install/personal_data",
+			"style": {
+				"navigationBarTitleText": "修改资料",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+				
+			}
+		},
+		//我的服务 — 设置——修改密码页面
+		{
+			"path":"pages/user/install/change_password",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationStyle":"custom"
+				
+			}
+		},
+		//我的服务 — 设置——授权管理页面
+		{
+			"path":"pages/user/install/authorization_management",
+			"style": {
+				"navigationBarTitleText": "授权列表",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+			//我的服务 — 设置——发票管理页面
+			{
+				"path":"pages/user/install/invoices",
+				"style": {
+					"navigationBarTitleText": "发票管理",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			//我的服务 — 设置——开票历史页面
+			{
+				"path":"pages/user/install/billing",
+				"style": {
+					"navigationBarTitleText": "开票历史",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			//我的服务 — 设置——关于商城页面
+			{
+				"path":"pages/user/install/about",
+				"style": {
+					"navigationBarTitleText": "关于RF商城",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			//我的服务 — 设置——站点帮助页面
+			{
+				"path":"pages/user/install/help",
+				"style": {
+					"navigationBarTitleText": "站点帮助",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			//我的服务 — 设置——意见反馈页面
+			{
+				"path":"pages/user/install/feedback",
+				"style": {
+					"navigationBarTitleText": "意见反馈",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			//我的服务 — 商城公告页面
+			{
+				"path":"pages/user/serve/notice",
+				"style": {
+					"navigationBarTitleText": "公告",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			}
 	],
 	
-	// "globalStyle":{
-	// 	"navigationBarTextStyle": "black",
-	// 			"navigationBarBackgroundColor": "#fff"
-	// },
+
 	"tabBar":{
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",

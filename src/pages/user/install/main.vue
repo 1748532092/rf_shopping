@@ -1,47 +1,7 @@
 <template>
   <view class="install_page">
-    <view class="list_item">
-      <text class="item_title">个人资料</text>
-      <text class="item_tip"></text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item">
-      <text class="item_title">修改密码</text>
-      <text class="item_tip"></text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item">
-      <text class="item_title">授权管理</text>
-      <text class="item_tip"></text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item m_t">
-      <text class="item_title">发票管理</text>
-      <text class="item_tip"></text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item">
-      <text class="item_title">开票历史</text>
-      <text class="item_tip"></text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item">
-      <text class="item_title">清除缓存</text>
-      <text class="item_tip">4kb</text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item m_t">
-      <text class="item_title">关于商城</text>
-      <text class="item_tip"></text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item">
-      <text class="item_title">站点帮助</text>
-      <text class="item_tip"></text>
-      <text class="icon iconfont">&#xe62e;</text>
-    </view>
-    <view class="list_item">
-      <text class="item_title">意见反馈</text>
+    <view class="list_item" v-for="(item,index) in list" :key="index">
+      <text class="item_title">{{item}}</text>
       <text class="item_tip"></text>
       <text class="icon iconfont">&#xe62e;</text>
     </view>
@@ -69,7 +29,13 @@
   </view>
 </template>
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      list:["个人资料","修改密码","授权管理","发票管理","开票历史","清楚缓存","关于商城","站点帮助","意见反馈"]
+    }
+  }
+};
 </script>
 <style lang="less" scoped>
 .install_page {
@@ -87,6 +53,9 @@ export default {};
     background: #fff;
     justify-content: center;
     border-bottom: 1px solid #e4e7ed;
+    &:nth-child(3n){
+      margin-bottom: 20rpx;
+    }
     .item_title {
       flex: 1;
       font-size: 30rpx;

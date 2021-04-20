@@ -80,7 +80,6 @@ export default {
       // 状态栏高度
       statusBarHeight: 0,
       tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
-      contentList: ["首页", "家电用器", "男装", "手机"],
       tabBars: [
         {
           id: "1",
