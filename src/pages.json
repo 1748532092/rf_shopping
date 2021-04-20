@@ -189,6 +189,15 @@
 					"navigationBarTextStyle": "black",
 					"navigationBarBackgroundColor": "#fff"
 				}
+			},
+			//我的服务 — 领券中心页面
+			{
+				"path":"pages/user/serve/voucher_center",
+				"style": {
+					"navigationBarTitleText": "领券中心",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
 			}
 	],
 	
