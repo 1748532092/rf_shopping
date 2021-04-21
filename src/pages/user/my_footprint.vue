@@ -1,6 +1,15 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-04-20 09:01:23
+ * @LastEditTime: 2021-04-21 09:15:48
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\pages\user\my_footprint.vue
+-->
 <template>
 <view class="footprint_page">
-
+    <empty_footprint></empty_footprint>
+    
 </view>
 </template>
 <script>

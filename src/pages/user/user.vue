@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:45:00
- * @LastEditTime: 2021-04-16 18:26:47
+ * @LastEditTime: 2021-04-21 10:16:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\user\user.vue
@@ -26,13 +26,15 @@
     <view class="user_content">
       <image class="arc" src="../../static/arc.png"></image>
       <view class="account_module">
-        <view class="account_title">
-          <text class="icon iconfont">&#xe659;</text>
-          <text class="title">我的账户</text>
-          <view class="arrow_icon">
-            <text class="icon iconfont">&#xe62e;</text>
+        <!-- <navigator url="../user/my_account.vue" open-type="navigate" hover-class="changestyle"> -->
+          <view class="account_title">
+            <text class="icon iconfont">&#xe659;</text>
+            <text class="title">我的账户</text>
+            <view class="arrow_icon">
+              <text class="icon iconfont">&#xe62e;</text>
+            </view>
           </view>
-        </view>
+        <!-- </navigator> -->
         <view class="account_text">
           <view class="item">
             <view class="data">0</view>
@@ -125,17 +127,17 @@
             <view class="icon iconfont">&#xe85d;</view>
             <view class="name">分享</view>
           </view>
-           <view class="item">
+          <view class="item">
             <view class="icon iconfont">&#xe85d;</view>
             <view class="name">直播</view>
           </view>
         </view>
-         <view class="account_text">
+        <view class="account_text">
           <view class="item">
             <view class="icon iconfont">&#xe639;</view>
             <view class="name">设置</view>
           </view>
-         </view>
+        </view>
       </view>
     </view>
   </view>
