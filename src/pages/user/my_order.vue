@@ -54,6 +54,9 @@ export default {
   components: {
     empty,
   },
+  onLoad(e){
+   this.tabIndex=e.id
+  },
   data() {
     return {
       tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
@@ -94,7 +97,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 
 .my_order {
   background: #f8f8f8;

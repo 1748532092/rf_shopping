@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-04-15 14:23:42
+ * @LastEditTime: 2021-04-22 15:49:57
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\components\electric.vue
+-->
 <template name="electricTab">
   <view class="empty">
     <view class="empty_content">
@@ -16,7 +24,7 @@
 <script>
 export default {};
 </script>
-    <style lang="less" scoped>
+    <style lang="scss" scoped>
 .empty_content {
   display: flex;
   flex-direction: column;

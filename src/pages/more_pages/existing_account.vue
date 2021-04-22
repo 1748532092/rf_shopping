@@ -40,7 +40,7 @@
 <script>
 export default {};
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .existing_account_login {
   width: 100%;
   position: relative;

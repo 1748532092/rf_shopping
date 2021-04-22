@@ -19,7 +19,7 @@ import product_list from './product_list.vue';
 export default {
   components: { product_list },};
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .empty {
   background: #fff;
   height: 100%;

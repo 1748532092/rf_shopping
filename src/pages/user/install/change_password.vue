@@ -49,7 +49,7 @@
 <script>
 export default {};
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .chang_password {
   width: 100%;
   position: relative;

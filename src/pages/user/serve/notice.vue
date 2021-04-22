@@ -31,7 +31,7 @@
 export default {};
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .notice_item {
   display: flex;
   flex-direction: column;

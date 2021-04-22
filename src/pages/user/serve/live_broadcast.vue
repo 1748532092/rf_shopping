@@ -70,7 +70,7 @@ export default {
   },
 };
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 
 .my_order {
   background: #f8f8f8;

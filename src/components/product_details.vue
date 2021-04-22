@@ -121,6 +121,26 @@
       </view>
       <image src="../static/goods.jpg"></image>
     </view>
+    <view class="page_bottom">
+      <view class="left">
+        <view class="item">
+          <view class="icon iconfont">&#xe603;</view>
+          <text>首页</text>
+        </view>
+        <view class="item">
+          <view class="icon iconfont">&#xe605;</view>
+          <text>购物车</text>
+        </view>
+        <view class="item">
+          <view class="icon iconfont">&#xe709;</view>
+          <text>客服</text>
+        </view>
+      </view>
+      <view class="right">
+        <button class="buy_now">立即购买</button>
+        <button class="add_cart">加入购物车</button>
+      </view>
+    </view>
   </view>
 </template>
 
@@ -128,7 +148,7 @@
 export default {};
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .product_details {
   background: #f8f8f8;
   .back_btn {
@@ -349,6 +369,46 @@ export default {};
       max-width: 90%;
       display: inline-block;
       position: relative;
+    }
+  }
+  .page_bottom {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rpx 20rpx;
+    .left {
+      width: 300rpx;
+      display: flex;
+      align-items: center;
+      margin-left: 10rpx;
+      .item {
+        flex: 1;
+        font-size: 24rpx;
+        color: #606266;
+        text-align: center;
+        .iconfont {
+        }
+      }
+    }
+    .right {
+      display: flex;
+      margin-left: 50rpx;
+      .buy_now {
+        font-size: 24rpx;
+        background: #fa436a;
+        color: #fff;
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+      }
+      .add_cart {
+        font-size: 24rpx;
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+      }
     }
   }
 }

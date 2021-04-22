@@ -23,7 +23,7 @@ export default {}
 
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .unlog_cart{
     padding-top: 50%;
     .iconfont{

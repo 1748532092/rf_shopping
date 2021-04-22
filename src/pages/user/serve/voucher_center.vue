@@ -133,7 +133,7 @@
 </template>
 <script>
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .voucher_center {
   background-color: #f1f1f1;
   font-size: 28rpx;

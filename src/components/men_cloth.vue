@@ -47,7 +47,7 @@
     }
     </script>
 
-    <<style lang="less" scoped>
+    <<style lang="scss" scoped>
     .new_products_modules {
   .new_products_content {
     display: flex;

@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .add_address {
   position: fixed;
   bottom: 0;

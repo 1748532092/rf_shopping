@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:45:00
- * @LastEditTime: 2021-04-21 10:16:53
+ * @LastEditTime: 2021-04-22 18:28:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\user\user.vue
@@ -12,7 +12,7 @@
       <view class="user_info_box">
         <view class="user_info">
           <image class="photo_img" src="../../static/missing-face.png"></image>
-          <text class="lod_text">登录/注册</text>
+          <navigator class="lod_text" url="/pages/more_pages/login" hover-class="none">登录/注册</navigator>
         </view>
       </view>
       <view class="vip_card_box">
@@ -26,20 +26,18 @@
     <view class="user_content">
       <image class="arc" src="../../static/arc.png"></image>
       <view class="account_module">
-        <!-- <navigator url="../user/my_account.vue" open-type="navigate" hover-class="changestyle"> -->
-          <view class="account_title">
+          <navigator class="account_title" url="/pages/user/my_account" hover-class="none">
             <text class="icon iconfont">&#xe659;</text>
             <text class="title">我的账户</text>
             <view class="arrow_icon">
               <text class="icon iconfont">&#xe62e;</text>
             </view>
-          </view>
-        <!-- </navigator> -->
+          </navigator>
         <view class="account_text">
-          <view class="item">
+          <navigator class="item" url="/pages/user/my_account" hover-class="none">
             <view class="data">0</view>
             <view class="name">余额</view>
-          </view>
+          </navigator>
           <view class="item">
             <view class="data">0</view>
             <view class="name">优惠券</view>
@@ -51,44 +49,44 @@
         </view>
       </view>
       <view class="account_module">
-        <view class="account_title">
+        <navigator class="account_title" url="/pages/user/my_order" hover-class="none">
           <text class="icon iconfont">&#xe60b;</text>
           <text class="title">全部订单</text>
           <view class="arrow_icon">
             <text class="icon iconfont">&#xe62e;</text>
           </view>
-        </view>
+        </navigator>
         <view class="account_text">
-          <view class="item">
+          <navigator class="item" url="/pages/user/my_order?id=1" hover-class="none">
             <view class="icon iconfont">&#xe60d;</view>
             <view class="name">待付款</view>
-          </view>
-          <view class="item">
+          </navigator>
+          <navigator class="item" url="/pages/user/my_order?id=2" hover-class="none">
             <view class="icon iconfont">&#xe60c;</view>
             <view class="name">待发货</view>
-          </view>
-          <view class="item">
+          </navigator>
+          <navigator class="item" url="/pages/user/my_order?id=3" hover-class="none">
             <view class="icon iconfont">&#xe641;</view>
             <view class="name">待收货</view>
-          </view>
-          <view class="item">
+          </navigator>
+          <navigator class="item" url="/pages/user/my_order?id=4" hover-class="none">
             <view class="icon iconfont">&#xe639;</view>
             <view class="name">评价</view>
-          </view>
-          <view class="item">
+          </navigator>
+          <navigator class="item" url="/pages/user/order_after_sale" hover-class="none">
             <view class="icon iconfont">&#xe85d;</view>
             <view class="name">退款/售后</view>
-          </view>
+          </navigator>
         </view>
       </view>
       <view class="account_module">
-        <view class="account_title">
+        <navigator class="account_title" url="/pages/user/order_after_sale" hover-class="none">
           <text class="icon iconfont">&#xe786;</text>
           <text class="title">我的足迹</text>
           <view class="arrow_icon">
             <text class="icon iconfont">&#xe62e;</text>
           </view>
-        </view>
+        </navigator>
         <view class="account_text">
           <view class="item">
             <view class="icon iconfont">&#xe608;</view>
@@ -97,46 +95,46 @@
         </view>
       </view>
       <view class="account_module">
-        <view class="account_title">
+        <navigator class="account_title" url="/pages/user/install/main" hover-class="none">
           <text class="icon iconfont">&#xe73b;</text>
           <text class="title">我的服务</text>
           <view class="arrow_icon">
             <text class="icon iconfont">&#xe62e;</text>
           </view>
-        </view>
+        </navigator>
         <view class="account_text">
-          <view class="item">
+          <navigator class="item" url="/pages/user/serve/notice"  hover-class="none">
             <view class="icon iconfont">&#xe60d;</view>
             <view class="name">商城公告</view>
-          </view>
-          <view class="item">
+          </navigator>
+          <navigator class="item" url="/pages/user/serve/voucher_center"  hover-class="none">
             <view class="icon iconfont">&#xe60c;</view>
             <view class="name">领券中心</view>
-          </view>
-          <view class="item">
+          </navigator>
+          <navigator class="item" url="/pages/user/serve/address"  hover-class="none">
             <view class="icon iconfont">&#xe641;</view>
             <view class="name">地址管理</view>
-          </view>
+          </navigator>
         </view>
         <view class="account_text">
-          <view class="item">
+          <navigator class="item" url="/pages/user/serve/collection"  hover-class="none">
             <view class="icon iconfont">&#xe639;</view>
             <view class="name">我的收藏</view>
-          </view>
+          </navigator>
           <view class="item">
             <view class="icon iconfont">&#xe85d;</view>
             <view class="name">分享</view>
           </view>
-          <view class="item">
+          <navigator class="item" url="/pages/user/serve/live_broadcast"  hover-class="none">
             <view class="icon iconfont">&#xe85d;</view>
             <view class="name">直播</view>
-          </view>
+          </navigator>
         </view>
         <view class="account_text">
-          <view class="item">
+          <avigator class="account_title" url="/pages/user/install/main" hover-class="none">
             <view class="icon iconfont">&#xe639;</view>
             <view class="name">设置</view>
-          </view>
+          </avigator>
         </view>
       </view>
     </view>
@@ -147,7 +145,7 @@
 export default {};
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .user_top {
   display: flex;
   flex-direction: column;

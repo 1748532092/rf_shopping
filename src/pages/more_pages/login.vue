@@ -3,8 +3,8 @@
     <view class="logo">
       <image class="logo_img" src="../../static/logo.png"></image>
     </view>
-    <view>
-      <button class="existing_account">已有账号登录</button>
+    <view style="text-align:center">
+      <navigator class="existing_account" url="/pages/more_pages/existing_account" hover-class="none">已有账号登录</navigator>
       <button class="register">立即注册</button>
     </view>
     <view class="agreement">
@@ -25,7 +25,7 @@
 </template>
 <script >
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .logo_page {
   padding-top: 80rpx;
   .logo {

@@ -13,7 +13,7 @@
   </view>
 </template>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .empty_content {
   display: flex;
   flex-direction: column;

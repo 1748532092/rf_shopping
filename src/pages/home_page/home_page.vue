@@ -38,9 +38,6 @@
         <!-- 滑块视图 -->
         <swiper style=" height:4000rpx;"  :current="tabIndex" @change="tabChange"
           ><!-- current:当前所在滑块的index -->
-          <!-- <swiper-item v-for="(content, index) in contentList" :key="index">
-            <view class="content">{{ content }}</view>
-          </swiper-item> -->
           <swiper-item class="home_page_content">
             <scroll-view scroll-x="true" style="height:100%"> 
               <homeTab></homeTab>
@@ -59,7 +56,6 @@
         </swiper>
       </view>
     </view>
-   
   </view>
 </template>
 
@@ -73,7 +69,8 @@ export default {
     electricTab,
     homeTab,
     clothTab,
-    phoneTab,
+    phoneTab
+    
   },
   data() {
     return {
@@ -106,6 +103,7 @@ export default {
     this.statusBarHeight = uni.getSystemInfoSync()["statusBarHeight"];
   },
   methods: {
+   
     //切换选项卡
     toggleTab(index) {
       this.tabIndex = index;
@@ -119,7 +117,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .home_page_top {
   background: #fa436a;
   height: 200rpx;

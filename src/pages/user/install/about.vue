@@ -55,7 +55,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .about {
   background: #f8f8f8;
   padding: 20rpx 0;

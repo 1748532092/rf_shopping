@@ -1,11 +1,13 @@
 <!--
  * @Author: your name
- * @Date: 2021-04-13 13:48:00
- * @LastEditTime: 2021-04-19 16:25:41
+ * @Date: 2021-04-15 14:23:42
+ * @LastEditTime: 2021-04-22 15:32:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\App.vue
 -->
+
+
 <script>
 
 export default {
@@ -22,8 +24,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 /*每个页面公共css */
+@import './uview-ui/theme.scss';
 @import "./static/css/iconfont/icon.css";
 page{
   height: 100%;

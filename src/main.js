@@ -1,4 +1,14 @@
+/*
+ * @Author: your name
+ * @Date: 2021-04-15 14:23:42
+ * @LastEditTime: 2021-04-22 17:06:46
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\main.js
+ */
 import Vue from 'vue'
+import uView from "./uview-ui";
+Vue.use(uView);
 import App from './App'
 
 Vue.config.productionTip = false

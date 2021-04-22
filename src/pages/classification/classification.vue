@@ -32,7 +32,7 @@ export default {
 
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 
  .search_row{
     display: flex;

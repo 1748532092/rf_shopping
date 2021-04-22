@@ -57,7 +57,7 @@
 <script>
 export default {};
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .user_information {
   .user_profile {
     background: url("../../../static/user_bg.png");

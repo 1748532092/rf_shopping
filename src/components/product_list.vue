@@ -30,7 +30,7 @@
 <script>
 export default {};
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .products_content {
   display: flex;
   flex-wrap: wrap;
