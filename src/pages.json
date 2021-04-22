@@ -254,6 +254,15 @@
 					"navigationBarTextStyle": "black",
 					"navigationStyle":"custom"
 				}
+			},
+				//积分详情页
+			{
+				"path":"pages/more_pages/points_details",
+				"style": {
+						"navigationBarTitleText": "积分详情",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
 			}
 			
 	],
