@@ -30,7 +30,7 @@
             <text>验证码登录</text>
             <text>忘记密码?</text>
           </view>
-          <button class="login_btn">登录</button>
+          <button class="login_btn" >登录</button>
         </view>
         <view class="login_bottom">RF商城 版权所有</view>
       </view>

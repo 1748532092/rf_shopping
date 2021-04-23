@@ -263,11 +263,38 @@
 					"navigationBarTextStyle": "black",
 					"navigationBarBackgroundColor": "#fff"
 				}
+			},
+			//积分详情页—— 分值明细
+			{
+				"path":"components/score_details",
+				"style": {
+						"navigationBarTitleText": "分值明细",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			//积分详情页—— 分值提升
+			{
+				"path":"components/score_increase",
+				"style": {
+						"navigationBarTitleText": "分值提升",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			
+			//我的优惠券界面
+			{
+				"path":"pages/user/my_coupon",
+				"style": {
+						"navigationBarTitleText": "我的优惠券",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#fff"
+				}
 			}
 			
+			
 	],
-	
-
 	"tabBar":{
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",

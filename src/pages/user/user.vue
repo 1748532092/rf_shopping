@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:45:00
- * @LastEditTime: 2021-04-22 18:28:46
+ * @LastEditTime: 2021-04-23 16:11:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\user\user.vue
@@ -38,14 +38,14 @@
             <view class="data">0</view>
             <view class="name">余额</view>
           </navigator>
-          <view class="item">
+          <navigator class="item" url="/pages/user/my_coupon" hover-class="none">
             <view class="data">0</view>
             <view class="name">优惠券</view>
-          </view>
-          <view class="item">
+          </navigator>
+          <navigator class="item" url="/pages/user/my_account" hover-class="none">
             <view class="data">0</view>
             <view class="name">积分</view>
-          </view>
+          </navigator>
         </view>
       </view>
       <view class="account_module">
@@ -79,21 +79,21 @@
           </navigator>
         </view>
       </view>
-      <view class="account_module">
-        <navigator class="account_title" url="/pages/user/order_after_sale" hover-class="none">
+      <navigator class="account_module"  url="/pages/more_pages/login" hover-class="none">
+        <view class="account_title">
           <text class="icon iconfont">&#xe786;</text>
           <text class="title">我的足迹</text>
           <view class="arrow_icon">
             <text class="icon iconfont">&#xe62e;</text>
           </view>
-        </navigator>
+        </view>
         <view class="account_text">
           <view class="item">
             <view class="icon iconfont">&#xe608;</view>
             <view class="name">登录后查看</view>
           </view>
         </view>
-      </view>
+      </navigator>
       <view class="account_module">
         <navigator class="account_title" url="/pages/user/install/main" hover-class="none">
           <text class="icon iconfont">&#xe73b;</text>

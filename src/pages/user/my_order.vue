@@ -14,7 +14,6 @@
             @click="toggleTab(index)"
           >
             {{ item.name }}
-            <!-- <view class="scroll_tab_line"></view> -->
           </view>
         </block>
       </scroll-view>

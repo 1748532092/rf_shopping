@@ -42,7 +42,6 @@
             <scroll-view scroll-x="true" style="height:100%"> 
               <homeTab></homeTab>
             </scroll-view>
-            
           </swiper-item>
           <swiper-item>
             <electricTab></electricTab>
@@ -69,8 +68,7 @@ export default {
     electricTab,
     homeTab,
     clothTab,
-    phoneTab
-    
+    phoneTab,
   },
   data() {
     return {

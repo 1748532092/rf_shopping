@@ -5,7 +5,7 @@
     </view>
     <view style="text-align:center">
       <navigator class="existing_account" url="/pages/more_pages/existing_account" hover-class="none">已有账号登录</navigator>
-      <button class="register">立即注册</button>
+      <navigator class="register" url="/pages/more_pages/register" hover-class="none">立即注册</navigator>
     </view>
     <view class="agreement">
       <text class="icon iconfont">&#xe608;</text>
@@ -48,9 +48,9 @@
     color: #fa436a;
     border: 1rpx solid #fa436a;
     background: #fff;
+    margin: 0 auto;
   }
   .register {
-    margin-top: 50rpx;
     width: 630rpx;
     border-radius: 100rpx;
     height: 80rpx;
@@ -60,6 +60,7 @@
     color: #fa436a;
     border: 1rpx solid #fa436a;
     background: #fff;
+     margin: 50rpx auto 0;
   }
   .agreement {
     display: flex;

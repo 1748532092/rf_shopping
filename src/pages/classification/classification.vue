@@ -1,14 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:44:29
- * @LastEditTime: 2021-04-15 17:42:26
+ * @LastEditTime: 2021-04-23 16:50:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\classification\classification.vue
 -->
 <template>
    <view>
-       <view class="search_row">
+       <!-- <view class="search_row">
        <view class="sort_icon">
            <view class="icon iconfont">&#xe60e;</view>
        </view>
@@ -16,25 +16,18 @@
            <input class="input_text" placeholder="蔬菜"/>
            <view class="icon iconfont">&#xe647;</view>
        </view>
-       </view>
+       </view> -->
    </view>
 </template>
 
 <script>
 export default {
-    date(){
-        return{
-      
-        }
-    },
- 
 }
-
 </script>
 
 <style lang="scss" scoped>
 
- .search_row{
+/* .search_row{
     display: flex;
     margin: 10rpx 15rpx;
     .sort_icon{
@@ -63,5 +56,6 @@ export default {
         padding-right: 20rpx;
       }
     }
- }
+ }*/
+
 </style>

@@ -2,7 +2,7 @@
   <view>
     <view class="existing_account_login">
       <view class="login_top">
-        <text class="icon iconfont">&#xe628;</text>
+        <view class="icon iconfont">&#xe628;</view>
         <view class="describe">
           <view class="title">Hi~</view>
           <text>RF商城欢迎您</text>

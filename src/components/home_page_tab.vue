@@ -1,11 +1,4 @@
-<!--
- * @Author: your name
- * @Date: 2021-04-14 09:03:28
- * @LastEditTime: 2021-04-15 15:35:03
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\components\home_page_tab.vue
--->
+
 <template>
   <view>
     <!-- banner -->
@@ -40,22 +33,8 @@
         <view class="icon iconfont">&#xe619;</view>
       </view>
       <!-- 公告内容 -->
-      <view class="notice_text">
-        <ul>
-          <li>
-            123
-            <view class="icon iconfont">&#xe62e;</view>
-          </li>
-          <li>
-            456
-            <view class="icon iconfont">&#xe62e;</view>
-          </li>
-          <li>
-            789
-            <view class="icon iconfont">&#xe62e;</view>
-          </li>
-        </ul>
-      </view>
+      <u-notice-bar class="content" mode="vertical" :volume-icon="false" :list="list"></u-notice-bar>
+        <view class="icon iconfont">&#xe62e;</view>
     </view>
     <!-- 活动展示区 -->
     <view class="show">
@@ -121,6 +100,15 @@
 <script>
 export default {
   name: "homeTab",
+  data(){
+    return{
+        list:[
+        123,
+        456,
+        789,
+      ],
+    }
+  }
 };
 </script>
 
@@ -137,14 +125,6 @@ export default {
     width: 100%;
     height: 100%;
   }
-  // .banner_text{
-  //   position: absolute;
-  //   bottom: 0;
-  //   display: inline-flex;
-  //   font-size: 34rpx;
-  //  color: black;
-  //   opacity: 0.5;
-  // }
 }
 .classify_row {
   display: flex;
@@ -167,41 +147,31 @@ li {
   padding: 0;
 } /*先初始化一下默认样式*/
 .notice {
+  width: 100%;
   display: flex;
   margin: 20rpx auto;
+  .content{
+    width: 100%;
+  }
   .notice_icon {
     .iconfont {
       font-size: 50rpx;
-      margin: auto 40rpx;
+      margin-left: 40rpx ;
+     position: relative;
       line-height: 80rpx;
       color: red;
     }
   }
-  .notice_text {
-    display: flex;
-    width: 590rpx; /*单行显示，超出隐藏*/
-    height: 80rpx; /*固定公告栏显示区域的高度*/
-    overflow: hidden;
-    position: relative;
-    li {
-      list-style: none;
-      line-height: 80rpx;
-      font-size: 26rpx;
-      /*以下为了单行显示，超出隐藏*/
-      display: block;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
       .iconfont {
         position: absolute;
-        right: 0;
+        right: 10rpx;
         display: inline;
         font-size: 50rpx;
         color: rgb(114, 106, 106);
       }
-    }
+    
   }
-}
+
 .show {
   display: flex;
   margin: 0 auto;
