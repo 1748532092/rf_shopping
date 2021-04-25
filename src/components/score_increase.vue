@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\components\score_details.vue
 -->
-<template>
+<template name="score_increase">
   <view>
     <view class="tips_box">
       <text class="name">购买商品可获得积分奖励</text>

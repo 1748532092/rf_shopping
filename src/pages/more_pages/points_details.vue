@@ -27,22 +27,53 @@
         </view>
       </view>
       <view class="tab">
-        <view class="item active">分值明细</view>
-        <!-- <score_details ></score_details> -->
-         <view class="item">分值提升</view>
-         <!-- <score_increase></score_increase> -->
+        <!-- 头部 -->
+        <view class="tab_header">
+          <view
+            class="navIndex ==1 ? 'item active' :'item'"
+            @click="checkIndex(1)"
+            >分值明细</view
+          >
+          <view
+            class="navIndex ==1 ? 'item active' :'item'"
+            @click="checkIndex(2)"
+            >分值提升</view
+          >
+        </view>
       </view>
+    </view>
+    <!-- 内容 -->
+    <view class="tab_contenet">
+      <score_details class="show" v-if="navIndex == 1"></score_details>
+      <score_increase class="show" v-if="navIndex == 2"></score_increase>
     </view>
   </view>
 </template>
 <script>
-import score_details  from "../../components/score_details"
-import score_increase  from "../../components/score_increase"
+import score_details from "../../components/score_details";
+import score_increase from "../../components/score_increase";
 export default {
-    components:{
-        score_details,
-        score_increase,
-    }
+  components: {
+    score_details,
+    score_increase,
+  },
+  data() {
+    return {
+      navIndex: 1,
+      navList: ["分值明细", "分值提升"],
+      listIndex: 0,
+    };
+  },
+  methods: {
+    checkIndex(index) {
+      this.navIndex = index;
+    },
+    checkListIndex(index) {
+      this.listIndex = index;
+    },
+    
+
+  },
 };
 </script>
 
@@ -83,25 +114,34 @@ export default {
         }
       }
     }
-    .tab {
+  }
+  .tab {
+    .tab_header {
       position: absolute;
       bottom: -2rpx;
       display: flex;
-      width: 80%;
+      width: 600rpx;
       margin: 0 10%;
       border-radius: 20rpx 20rpx 0 0;
       background-color: #f7f7f7;
       height: 80rpx;
-      .item{
-          flex: 1;
-          text-align: center;
-          line-height: 80rpx;
-          color: #fa436a;
+      .item {
+        width: 300rpx;
+        display: inline-block;
+        text-align: center;
+        line-height: 80rpx;
+        color: #bbb;
+        border-radius: 20rpx 20rpx 0 0;
       }
-      .active{
-          color:#bbb;
+      .active {
+        color: #fa436a;
+        background: #fff;
+        border-radius: 20rpx 0 0 0;
       }
     }
   }
+}
+.show {
+  display: block;
 }
 </style>

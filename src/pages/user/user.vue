@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:45:00
- * @LastEditTime: 2021-04-23 16:11:51
+ * @LastEditTime: 2021-04-25 18:36:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\user\user.vue
@@ -42,7 +42,7 @@
             <view class="data">0</view>
             <view class="name">优惠券</view>
           </navigator>
-          <navigator class="item" url="/pages/user/my_account" hover-class="none">
+          <navigator class="item" url="/pages/more_pages/points_details" hover-class="none">
             <view class="data">0</view>
             <view class="name">积分</view>
           </navigator>
@@ -66,11 +66,11 @@
             <view class="name">待发货</view>
           </navigator>
           <navigator class="item" url="/pages/user/my_order?id=3" hover-class="none">
-            <view class="icon iconfont">&#xe641;</view>
+            <view class="icon iconfont">&#xe612;</view>
             <view class="name">待收货</view>
           </navigator>
           <navigator class="item" url="/pages/user/my_order?id=4" hover-class="none">
-            <view class="icon iconfont">&#xe639;</view>
+            <view class="icon iconfont">&#xe78a;</view>
             <view class="name">评价</view>
           </navigator>
           <navigator class="item" url="/pages/user/order_after_sale" hover-class="none">
@@ -81,7 +81,7 @@
       </view>
       <navigator class="account_module"  url="/pages/more_pages/login" hover-class="none">
         <view class="account_title">
-          <text class="icon iconfont">&#xe786;</text>
+          <text class="icon iconfont">&#xe908;</text>
           <text class="title">我的足迹</text>
           <view class="arrow_icon">
             <text class="icon iconfont">&#xe62e;</text>
@@ -89,14 +89,14 @@
         </view>
         <view class="account_text">
           <view class="item">
-            <view class="icon iconfont">&#xe608;</view>
+            <view class="icon iconfont">&#xe682;</view>
             <view class="name">登录后查看</view>
           </view>
         </view>
       </navigator>
       <view class="account_module">
         <navigator class="account_title" url="/pages/user/install/main" hover-class="none">
-          <text class="icon iconfont">&#xe73b;</text>
+          <text class="icon iconfont">&#xe611;</text>
           <text class="title">我的服务</text>
           <view class="arrow_icon">
             <text class="icon iconfont">&#xe62e;</text>

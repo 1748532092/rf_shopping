@@ -33,8 +33,14 @@
         <view class="icon iconfont">&#xe619;</view>
       </view>
       <!-- 公告内容 -->
-      <u-notice-bar class="content" mode="vertical" :volume-icon="false" :list="list"></u-notice-bar>
+      <view class="content"   @click="clickFn">
+        <u-notice-bar
+          mode="vertical"
+          :volume-icon="false"
+          :list="list"
+        ></u-notice-bar>
         <view class="icon iconfont">&#xe62e;</view>
+      </view>
     </view>
     <!-- 活动展示区 -->
     <view class="show">
@@ -53,14 +59,15 @@
     <view>
       <image class="active_img" src="../static/share/banner_one.png"></image>
     </view>
+
     <!-- 新品上市 -->
-    <view class="new_products_modules">
+    <view class="new_products_modules" v-for="(item,index) in sort" :key="index">
       <view class="new_products_top">
-        <view class="icon iconfont">&#xe601;</view>
+        <view class="icon iconfont">{{item.icon}}</view>
         <view class="new_products_top_right">
           <view>
-            <view class="new_products_chinese">新品上市</view>
-            <view class="new_products_english">New Products Listed</view>
+            <view class="new_products_chinese">{{item.name}}</view>
+            <view class="new_products_english">{{item.english}}</view>
           </view>
           <view class="icon iconfont">&#xe62e;</view>
         </view>
@@ -80,15 +87,15 @@
               <view class="selling_price_text">38</view>
             </view>
             <view class="original_price">
-                <view class="original_price_sign">¥</view>
-               <view class="original_price_text">45</view>
+              <view class="original_price_sign">¥</view>
+              <view class="original_price_text">45</view>
             </view>
           </view>
           <view class="goods_sales">
-            <view style="display:inline">
+            <view style="display: inline">
               <span>301</span>
               <view class="sales_number">人付款</view>
-              </view>
+            </view>
             <view class="icon iconfont">&#xe602; </view>
           </view>
         </view>
@@ -100,15 +107,33 @@
 <script>
 export default {
   name: "homeTab",
-  data(){
-    return{
-        list:[
-        123,
-        456,
-        789,
-      ],
-    }
-  }
+  data() {
+    return {
+      list: ["123", "456", "789"],
+      sort:[
+        {
+          name: "新品上市",
+          english:"New Products Listed",
+          icon: '\ue601',
+        },
+         {
+          name: "推荐商品",
+          english:"Recommend Product",
+          icon: '\ue600',
+        },
+         {
+          name: "热门商品",
+           english:"Hot Product",
+          icon: '\ue60e',
+        },
+      ]
+    };
+  },
+  methods: {
+    clickFn: function (e) {
+      uni.navigateTo({ url: "/pages/user/serve/notice" });
+    },
+  },
 };
 </script>
 
@@ -150,27 +175,32 @@ li {
   width: 100%;
   display: flex;
   margin: 20rpx auto;
-  .content{
+  .content {
     width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    u-notice-bar {
+      width: 100%;
+    }
+    .iconfont {
+      position: absolute;
+      right: 20rpx;
+      display: inline;
+      font-size: 50rpx;
+      color: rgb(114, 106, 106);
+    }
   }
   .notice_icon {
     .iconfont {
       font-size: 50rpx;
-      margin-left: 40rpx ;
-     position: relative;
+      margin-left: 40rpx;
+      position: relative;
       line-height: 80rpx;
       color: red;
     }
   }
-      .iconfont {
-        position: absolute;
-        right: 10rpx;
-        display: inline;
-        font-size: 50rpx;
-        color: rgb(114, 106, 106);
-      }
-    
-  }
+}
 
 .show {
   display: flex;
@@ -178,7 +208,7 @@ li {
   .bargain_img {
     height: 350rpx;
     width: 300rpx;
-    margin:0 20rpx 0 30rpx;
+    margin: 0 20rpx 0 30rpx;
   }
   .group_img {
     height: 170rpx;
@@ -199,10 +229,11 @@ li {
   margin: 20rpx 30rpx;
 }
 .new_products_modules {
+  margin: 50rpx 0;
   .new_products_top {
     display: flex;
     position: relative;
-    border-bottom:1rpx solid rgb(206, 194, 194);
+    border-bottom: 1rpx solid rgb(206, 194, 194);
     padding-bottom: 20rpx;
     .iconfont {
       margin: auto 30rpx;
@@ -262,48 +293,48 @@ li {
         -webkit-box-orient: vertical;
         padding: 20rpx;
       }
-      .selling_price{
+      .selling_price {
         display: inline-flex;
         margin-right: 10rpx;
-        .selling_price_sign{
+        .selling_price_sign {
           display: inline;
           font-size: 32rpx;
           color: red;
         }
-        .selling_price_text{
+        .selling_price_text {
           display: inline;
           font-size: 30rpx;
           color: red;
         }
       }
-      .original_price{
+      .original_price {
         display: inline-flex;
         text-decoration: line-through;
-        .original_price_sign{
+        .original_price_sign {
           display: inline;
           font-size: 28rpx;
           color: rgb(124, 112, 112);
         }
-        .original_price_text{
+        .original_price_text {
           display: inline;
           font-size: 26rpx;
           color: rgb(124, 112, 112);
           margin-left: 10rpx;
         }
       }
-      .goods_sales{
+      .goods_sales {
         position: relative;
         width: 300rpx;
         padding: auto 20rpx;
-        span{
-            color: red;
-             font-size: 26rpx;
-          }
-        .sales_number{
+        span {
+          color: red;
+          font-size: 26rpx;
+        }
+        .sales_number {
           display: inline;
           font-size: 26rpx;
         }
-        .iconfont{
+        .iconfont {
           position: absolute;
           right: 0;
           display: inline;
@@ -312,7 +343,6 @@ li {
         }
       }
     }
-
   }
 }
 </style>

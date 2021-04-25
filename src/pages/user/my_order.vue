@@ -142,7 +142,7 @@ export default {
   }
 
   .swiper_box {
-    height: calc(100% - 170rpx);
+    height: calc(100vh - 170rpx);
     .item{
       overflow: auto;
     }

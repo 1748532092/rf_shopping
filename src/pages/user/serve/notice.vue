@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-20 16:57:44
- * @LastEditTime: 2021-04-20 17:39:51
+ * @LastEditTime: 2021-04-25 14:30:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\pages\user\serve\notice.vue
@@ -28,7 +28,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+    onLoad: function (option) { //option为object类型，会序列化上个页面传递的参数
+    }
+};
 </script>
 
 <style lang="scss" scoped>

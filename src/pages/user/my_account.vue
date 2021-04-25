@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-19 10:57:11
- * @LastEditTime: 2021-04-19 14:37:18
+ * @LastEditTime: 2021-04-25 17:52:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\pages\user\my_account.vue
@@ -39,12 +39,12 @@
         <text class="icon iconfont">&#xe6a1;</text>
         <text>消费记录</text>
       </view>
-      <view class="item">
+      <navigator class="item" url="/pages/more_pages/points_details">
         <text class="icon iconfont">&#xe755;</text>
         <text>积分中心</text>
-      </view>
+      </navigator>
     </view>
-    <view class="get_coupons">
+    <navigator class="get_coupons" url="/pages/user/serve/voucher_center">
       <view class="item">
         <view class="content_right">
           <view class="get_coupons_name">领取优惠券</view>
@@ -52,7 +52,7 @@
         </view>
         <text class="icon iconfont">&#xe655;</text>
       </view>
-    </view>
+    </navigator>
   </view>
 </template>
 <script>

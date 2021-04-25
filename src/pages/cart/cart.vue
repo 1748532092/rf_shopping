@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:44:10
- * @LastEditTime: 2021-04-15 18:16:53
+ * @LastEditTime: 2021-04-25 16:06:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\cart\cart.vue
@@ -11,7 +11,7 @@
       <view class="icon iconfont">&#xe697;</view>
       <view class="txt">
           <text class="empty_text">空空如也</text>
-          <text class="lod_text">登录/注册></text>
+          <navigator class="lod_text" url="/pages/more_pages/login" hover-class="none">登录/注册></navigator>
       </view>
   </view>
 </template>
@@ -34,6 +34,8 @@ export default {
         margin-top: 20rpx;
         font-size: 26rpx;
         text-align: center;
+        display: flex;
+        justify-content: center;
         .empty_text{
             color:rgb(204, 197, 197);
     }

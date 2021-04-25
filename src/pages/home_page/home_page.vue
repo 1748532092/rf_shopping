@@ -1,6 +1,6 @@
 
 <template>
-  <view>
+  <view >
     <view class="home_page_top">
       <!-- 状态栏占位 -->
       <view
@@ -8,12 +8,12 @@
         :style="{ paddingTop: statusBarHeight + 'px' }"
       ></view>
       <view class="search_scan">
-        <view class="search_box">
+        <navigator class="search_box" url="/pages/more_pages/search" hover-class="none">
           <view class="search_img">
             <view class="icon iconfont">&#xe647;</view>
           </view>
           <input class="input_text" placeholder="蔬菜" />
-        </view>
+        </navigator>
         <view class="scan_img">
           <text class="icon iconfont">&#xe78d;</text>
         </view>
@@ -32,11 +32,12 @@
           </block>
         </scroll-view>
       </view>
-
+    </view>
       <!-- 内容区 -->
+      <view style="height:250rpx"></view>
       <view class="content">
         <!-- 滑块视图 -->
-        <swiper style=" height:4000rpx;"  :current="tabIndex" @change="tabChange"
+        <swiper style="height:4800rpx;"  :current="tabIndex" @change="tabChange"
           ><!-- current:当前所在滑块的index -->
           <swiper-item class="home_page_content">
             <scroll-view scroll-x="true" style="height:100%"> 
@@ -55,7 +56,7 @@
         </swiper>
       </view>
     </view>
-  </view>
+  
 </template>
 
 <script>
@@ -77,19 +78,19 @@ export default {
       tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
       tabBars: [
         {
-          id: "1",
+          id: "0",
           name: "首页",
         },
         {
-          id: "2",
+          id: "1",
           name: "家电用器",
         },
         {
-          id: "3",
+          id: "2",
           name: "男装",
         },
         {
-          id: "4",
+          id: "3",
           name: "手机",
         },
       ],
@@ -119,13 +120,19 @@ export default {
 .home_page_top {
   background: #fa436a;
   height: 200rpx;
+  left: 0;
+  right: 0;
+  top:0;
+  padding-bottom: 20rpx;
+  position: fixed;
+  z-index: 10;
   .search_scan {
     display: flex;
     justify-content: space-around;
     vertical-align: middle;
     height: 60rpx;
-    width: 550rpx;
-    padding-top: 10rpx;
+    width: 530rpx;
+    padding-top: 20rpx;
     margin-bottom: 20rpx;
     .search_box {
       display: flex;
@@ -142,9 +149,8 @@ export default {
         display: inline-flex;
         align-items: center;
         margin-left: 175rpx;
-        margin-right: 10rpx;
+        margin-right: 20rpx;
         .iconfont {
-          font-size: 50rpx;
           color: rgb(153, 141, 141);
         }
       }
@@ -160,7 +166,11 @@ export default {
   }
   .active {
     color: #fff;
-    border-bottom: 5rpx solid white;
+    .scroll_tab_line{
+      border-bottom: 5rpx solid white;
+      width: 100rpx;
+      margin-top: 10rpx;
+    }
   }
   .scroll_tab {
     white-space: nowrap; /* 必要，导航栏才能横向*/
@@ -175,7 +185,7 @@ export default {
   }
 }
 .content{
-  margin-top: 50rpx;
+  position: relative;
   .home_page_content{
      height: 350rpx;
   }

@@ -1,17 +1,17 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:44:49
- * @LastEditTime: 2021-04-15 17:09:58
+ * @LastEditTime: 2021-04-25 16:03:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\news\news.vue
 -->
 <template>
   <view class="unlog_cart">
-      <view class="icon iconfont">&#xe697;</view>
+      <view class="icon iconfont">&#xe637;</view>
       <view class="txt">
           <text class="empty_text">暂未登录</text>
-          <text class="lod_text">登录/注册></text>
+          <navigator class="lod_text" url="/pages/more_pages/login" hover-class="none">登录/注册></navigator>
       </view>
   </view>
 </template>
@@ -32,9 +32,11 @@ export default {}
         text-align: center;
     }
     .txt{
+        display: flex;
         margin-top: 20rpx;
         font-size: 26rpx;
         text-align: center;
+        justify-content: center;
         .empty_text{
             color:rgb(204, 197, 197);
     }

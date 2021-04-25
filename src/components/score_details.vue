@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\components\score_details.vue
 -->
-<template>
+<template name="score_details">
   <view class="score_details">
       <view class="tips_box">
           <text>提示：积分可用来兑换指定商品</text>

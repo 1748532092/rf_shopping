@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-23 15:11:02
- * @LastEditTime: 2021-04-23 16:57:29
+ * @LastEditTime: 2021-04-25 17:38:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\pages\user\my_coupon.vue
@@ -24,11 +24,14 @@
     </view>
     <swiper class="swiper_box" :current="tabIndex" @change="tabChange">
       <swiper-item class="item" v-for="(item,index) in tabBars" :key="index">
-        <scroll-view scroll-y="true" class="content">
-          <empty_coupon></empty_coupon>
-        </scroll-view>
-      </swiper-item>
-    </swiper>
+       
+        <swiper-view class="content">
+             <empty_coupon></empty_coupon>
+        </swiper-view>
+      </swiper-item> 
+      
+    </swiper> 
+  
 </view>
   
 </template>
@@ -44,15 +47,15 @@ export default {
       tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
       tabBars: [
         {
-          id: "1",
+          id: "0",
           name: "可用",
         },
         {
-          id: "2",
+          id: "1",
           name: "已使用",
         },
         {
-          id: "3",
+          id: "2",
           name: "已失效",
         },
       ],
@@ -92,7 +95,7 @@ export default {
 }
 
 .swiper_box {
-  height: calc(100% - 170rpx);
+  height: calc(100vh - 170rpx);
   .item {
     overflow: auto;
   }

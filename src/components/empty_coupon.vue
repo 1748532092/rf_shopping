@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-23 15:12:34
- * @LastEditTime: 2021-04-23 15:24:20
+ * @LastEditTime: 2021-04-25 17:40:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\components\empty_coupon.vue

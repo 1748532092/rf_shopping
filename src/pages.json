@@ -11,19 +11,20 @@
 			"^uni-(.*)": "@dcloudio/uniui/lib/uni-$1/uni-$1.vue"
 		}
 	},
-	"pages": [ 
+	"pages": [
 		//首页
 		{
 			"path": "pages/home_page/home_page",
 			"style": {
-				"navigationStyle":"custom"
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
 			}
 		},
 
 		//分类
 		{
-			"path":"pages/classification/classification",
-			"style":{
+			"path": "pages/classification/classification",
+			"style": {
 				"navigationBarTitleText": "分类",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
@@ -32,7 +33,7 @@
 
 		// 消息
 		{
-			"path":"pages/news/news",
+			"path": "pages/news/news",
 			"style": {
 				"navigationBarTitleText": "消息",
 				"navigationBarTextStyle": "black",
@@ -40,53 +41,52 @@
 			}
 
 		},
-		
+
 		//购物车
 		{
-			"path":"pages/cart/cart",
+			"path": "pages/cart/cart",
 			"style": {
 				"navigationBarTitleText": "购物车",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
 		},
-		
+
 		//我的
 		{
-			"path":"pages/user/user",
+			"path": "pages/user/user",
 			"style": {
-				"navigationStyle":"custom"
+				"navigationStyle": "custom"
 			}
 		},
 		//登录页面
 		{
-			"path":"pages/more_pages/login",
+			"path": "pages/more_pages/login",
 			"style": {
-				"navigationBarTitleText": "登录页面",
+				"navigationBarTitleText": "登录",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
 		},
 		//已有账号页面
 		{
-			"path":"pages/more_pages/existing_account",
+			"path": "pages/more_pages/existing_account",
 			"style": {
 				"navigationBarTextStyle": "black",
-				"navigationStyle":"custom"
+				"navigationStyle": "custom"
 			}
 		},
 		//注册页面
 		{
-			"path":"pages/more_pages/register",
+			"path": "pages/more_pages/register",
 			"style": {
-					"navigationBarTextStyle": "black",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
 			}
 		},
 		//我的账户页面
 		{
-			"path":"pages/user/my_account",
+			"path": "pages/user/my_account",
 			"style": {
 				"navigationBarTitleText": "我的账户",
 				"navigationBarTextStyle": "black",
@@ -95,7 +95,7 @@
 		},
 		//我的账户 — 退款/售后页面
 		{
-			"path":"pages/user/order_after_sale",
+			"path": "pages/user/order_after_sale",
 			"style": {
 				"navigationBarTitleText": "订单售后",
 				"navigationBarTextStyle": "black",
@@ -104,7 +104,7 @@
 		},
 		//我的订单页面
 		{
-			"path":"pages/user/my_order",
+			"path": "pages/user/my_order",
 			"style": {
 				"navigationBarTitleText": "我的订单",
 				"navigationBarTextStyle": "black",
@@ -113,16 +113,16 @@
 		},
 		//我的足迹页面
 		{
-			"path":"pages/user/my_footprint",
+			"path": "pages/user/my_footprint",
 			"style": {
 				"navigationBarTitleText": "我的足迹",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
 		},
-			//我的服务 — 设置页面
+		//我的服务 — 设置页面
 		{
-			"path":"pages/user/install/main",
+			"path": "pages/user/install/main",
 			"style": {
 				"navigationBarTitleText": "设置",
 				"navigationBarTextStyle": "black",
@@ -131,177 +131,211 @@
 		},
 		//我的服务 — 设置——个人资料页面
 		{
-			"path":"pages/user/install/personal_data",
+			"path": "pages/user/install/personal_data",
 			"style": {
 				"navigationBarTitleText": "修改资料",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
-				
+
 			}
 		},
 		//我的服务 — 设置——修改密码页面
 		{
-			"path":"pages/user/install/change_password",
+			"path": "pages/user/install/change_password",
 			"style": {
 				"navigationBarTextStyle": "black",
-				"navigationStyle":"custom"
-				
+				"navigationStyle": "custom"
+
 			}
 		},
 		//我的服务 — 设置——授权管理页面
 		{
-			"path":"pages/user/install/authorization_management",
+			"path": "pages/user/install/authorization_management",
 			"style": {
 				"navigationBarTitleText": "授权列表",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
 		},
-			//我的服务 — 设置——发票管理页面
-			{
-				"path":"pages/user/install/invoices",
-				"style": {
-					"navigationBarTitleText": "发票管理",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 设置——开票历史页面
-			{
-				"path":"pages/user/install/billing",
-				"style": {
-					"navigationBarTitleText": "开票历史",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 设置——关于商城页面
-			{
-				"path":"pages/user/install/about",
-				"style": {
-					"navigationBarTitleText": "关于RF商城",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 设置——站点帮助页面
-			{
-				"path":"pages/user/install/help",
-				"style": {
-					"navigationBarTitleText": "站点帮助",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 设置——意见反馈页面
-			{
-				"path":"pages/user/install/feedback",
-				"style": {
-					"navigationBarTitleText": "意见反馈",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 商城公告页面
-			{
-				"path":"pages/user/serve/notice",
-				"style": {
-					"navigationBarTitleText": "公告",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 领券中心页面
-			{
-				"path":"pages/user/serve/voucher_center",
-				"style": {
-					"navigationBarTitleText": "领券中心",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 地址管理页面
-			{
-				"path":"pages/user/serve/address",
-				"style": {
-					"navigationBarTitleText": "收货地址",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 我的收藏页面
-			{
-				"path":"pages/user/serve/collection",
-				"style": {
-					"navigationBarTitleText": "我的收藏",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//我的服务 — 直播页面
-			{
-				"path":"pages/user/serve/live_broadcast",
-				"style": {
-					"navigationBarTitleText": "直播",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//商品详情页
-			{
-				"path":"components/product_details",
-				"style": {
-					"navigationBarTextStyle": "black",
-					"navigationStyle":"custom"
-				}
-			},
-				//积分详情页
-			{
-				"path":"pages/more_pages/points_details",
-				"style": {
-						"navigationBarTitleText": "积分详情",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//积分详情页—— 分值明细
-			{
-				"path":"components/score_details",
-				"style": {
-						"navigationBarTitleText": "分值明细",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			//积分详情页—— 分值提升
-			{
-				"path":"components/score_increase",
-				"style": {
-						"navigationBarTitleText": "分值提升",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
-			},
-			
-			//我的优惠券界面
-			{
-				"path":"pages/user/my_coupon",
-				"style": {
-						"navigationBarTitleText": "我的优惠券",
-					"navigationBarTextStyle": "black",
-					"navigationBarBackgroundColor": "#fff"
-				}
+		//我的服务 — 设置——发票管理页面
+		{
+			"path": "pages/user/install/invoices",
+			"style": {
+				"navigationBarTitleText": "发票管理",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
 			}
-			
-			
+		},
+		//我的服务 — 设置——开票历史页面
+		{
+			"path": "pages/user/install/billing",
+			"style": {
+				"navigationBarTitleText": "开票历史",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 设置——关于商城页面
+		{
+			"path": "pages/user/install/about",
+			"style": {
+				"navigationBarTitleText": "关于RF商城",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 设置——站点帮助页面
+		{
+			"path": "pages/user/install/help",
+			"style": {
+				"navigationBarTitleText": "站点帮助",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 设置——意见反馈页面
+		{
+			"path": "pages/user/install/feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 商城公告页面
+		{
+			"path": "pages/user/serve/notice",
+			"style": {
+				"navigationBarTitleText": "公告",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 领券中心页面
+		{
+			"path": "pages/user/serve/voucher_center",
+			"style": {
+				"navigationBarTitleText": "领券中心",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 地址管理页面
+		{
+			"path": "pages/user/serve/address",
+			"style": {
+				"navigationBarTitleText": "收货地址",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 我的收藏页面
+		{
+			"path": "pages/user/serve/collection",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//我的服务 — 直播页面
+		{
+			"path": "pages/user/serve/live_broadcast",
+			"style": {
+				"navigationBarTitleText": "直播",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//商品详情页
+		{
+			"path": "components/product_details",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+			}
+		},
+		//积分详情页
+		{
+			"path": "pages/more_pages/points_details",
+			"style": {
+				"navigationBarTitleText": "积分详情",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//积分详情页—— 分值明细
+		{
+			"path": "components/score_details",
+			"style": {
+				"navigationBarTitleText": "分值明细",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//积分详情页—— 分值提升
+		{
+			"path": "components/score_increase",
+			"style": {
+				"navigationBarTitleText": "分值提升",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+
+		//我的优惠券界面
+		{
+			"path": "pages/user/my_coupon",
+			"style": {
+				"navigationBarTitleText": "我的优惠券",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//搜索界面
+		{
+			"path": "pages/more_pages/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//搜索结果界面
+		{
+			"path": "pages/more_pages/search_result",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+			}
+		},
+		//账单明细界面
+		{
+			"path": "pages/more_pages/bill_details",
+			"style": {
+				"navigationBarTitleText": "账户明细",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		}
+		// //个人资料界面
+		// {
+		// 	"path": "pages/user/install/personal_data",
+		// 	"style": {
+		// 		"navigationBarTitleText": "个人资料",
+		// 		"navigationBarTextStyle": "black",
+		// 		"navigationBarBackgroundColor": "#fff"
+		// 	}
+		// }
+
+
 	],
-	"tabBar":{
+	"tabBar": {
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/home_page/home_page",
 				"iconPath": "static/tab-home.png",
 				"selectedIconPath": "static/tab-home-rf.png",
@@ -331,5 +365,6 @@
 				"selectedIconPath": "static/tab-my-rf.png",
 				"text": "我的"
 			}
-		]}
+		]
+	}
 }

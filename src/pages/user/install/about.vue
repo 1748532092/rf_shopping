@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-20 14:40:23
- * @LastEditTime: 2021-04-20 15:30:52
+ * @LastEditTime: 2021-04-25 18:33:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\pages\user\install\about.vue
@@ -14,7 +14,7 @@
     </view>
     <view class="share">
       <view class="share_link">
-        <view class="icon iconfont">&#xe61a;</view>
+        <view class="icon iconfont">&#xe658;</view>
         <text>分享商城二维码给好友</text>
       </view>
       <view class="qrcode">
@@ -86,8 +86,9 @@ export default {
       font-size: 30rpx;
       margin-left: 30rpx;
       .iconfont {
-        color: #5eba8f;
+        
         margin-right: 16rpx;
+        font-size: 28rpx;
       }
     }
     .qrcode {

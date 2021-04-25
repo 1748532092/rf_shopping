@@ -1,10 +1,12 @@
 <template>
   <view class="install_page">
-    <view class="list_item" v-for="(item,index) in list" :key="index">
-      <text class="item_title">{{item}}</text>
+    <navigator class="list_item" v-for="(item,index) in list" :key="index" :url="item.url" >
+    
+        <text class="item_title">{{item.name}}</text>
       <text class="item_tip"></text>
       <text class="icon iconfont">&#xe62e;</text>
-    </view>
+    
+    </navigator>
     <view class="choose_color">
       <view class="item">
         <view class="content">
@@ -32,7 +34,45 @@
 export default {
   data(){
     return{
-      list:["个人资料","修改密码","授权管理","发票管理","开票历史","清楚缓存","关于商城","站点帮助","意见反馈"]
+      //  "修改密码","授权管理","发票管理","开票历史","清楚缓存","关于商城","站点帮助","意见反馈"
+      list:[
+        {
+          name: "个人资料",
+          url: "/pages/user/install/personal_data"
+          },
+            {
+          name: "修改密码",
+          url: "/pages/user/install/change_password"
+          },
+            {
+          name: "授权管理",
+          url: "/pages/user/install/authorization_management"
+          },
+            {
+          name: "发票管理",
+          url: "/pages/user/install/invoices"
+          },
+            {
+          name: "开票历史",
+          url: "/pages/user/install/billing"
+          },
+            {
+          name: "清理缓存",
+          url: ""
+          },
+            {
+          name: "关于商城",
+          url: "/pages/user/install/about"
+          },
+            {
+          name: "站点帮助",
+          url: "/pages/user/install/help"
+          },
+            {
+          name: "意见反馈",
+          url: "/pages/user/install/feedback"
+          },
+        ]
     }
   }
 };

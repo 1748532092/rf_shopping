@@ -8,7 +8,7 @@
       <navigator class="register" url="/pages/more_pages/register" hover-class="none">立即注册</navigator>
     </view>
     <view class="agreement">
-      <text class="icon iconfont">&#xe608;</text>
+      <text class="icon iconfont">&#xe60f;</text>
       <text class="content">登录表示同意</text>
       <text class="text">《RF商城协议》</text>
     </view>
@@ -18,7 +18,7 @@
         <text>其他登录方式</text>
       </view>
       <view class="login_type">
-        <button class="icon iconfont">&#xe601;</button>
+        <button class="icon iconfont">&#xe68a;</button>
       </view>
     </view>
   </view>
@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50rpx;
-    padding-bottom: 50%;
+    padding-bottom: 30%;
     .iconfont {
       font-size: 40rpx;
       color: #fa436a;
@@ -120,8 +120,8 @@
         padding-right: 28rpx;
         text-align: center;
         border-radius: 5px;
-        color: #000;
-        background-color: #f8f8f8;
+        color: rgb(45, 230, 106);
+        background-color: #fff;
       }
     }
   }
