@@ -27,24 +27,36 @@
       </view>
     </view>
     <view class="nav">
-      <view class="item">
+      <navigator
+        class="item"
+        url="/pages/more_pages/bill_details?id=0"
+        hover-class="none"
+      >
         <text class="icon iconfont">&#xe60d;</text>
         <text>账单记录</text>
-      </view>
-      <view class="item">
+      </navigator>
+      <navigator
+        class="item"
+        url="/pages/more_pages/bill_details?id=1"
+        hover-class="none"
+      >
         <text class="icon iconfont">&#xe621;</text>
         <text>充值记录</text>
-      </view>
-      <view class="item">
+      </navigator>
+      <navigator
+        class="item"
+        url="/pages/more_pages/bill_details?id=2"
+        hover-class="none"
+      >
         <text class="icon iconfont">&#xe6a1;</text>
         <text>消费记录</text>
-      </view>
+      </navigator>
       <navigator class="item" url="/pages/more_pages/points_details">
         <text class="icon iconfont">&#xe755;</text>
         <text>积分中心</text>
       </navigator>
     </view>
-    <navigator class="get_coupons" url="/pages/user/serve/voucher_center">
+    <navigator class="get_coupons" url="/pages/user/serve/voucher_center" hover-class="none">
       <view class="item">
         <view class="content_right">
           <view class="get_coupons_name">领取优惠券</view>
@@ -66,7 +78,7 @@ export default {};
   .summary {
     position: relative;
     background-color: #fa436a;
-    color: #d8d1d1;
+    color: rgba(255,255,255,.6);
     padding: 30rpx;
     height: 320rpx;
     opacity: 0.9;
@@ -104,7 +116,6 @@ export default {};
         color: #fa436a;
         font-size: 50rpx;
         display: block;
-        //   margin: 0 auto;
         margin-bottom: 10rpx;
       }
     }

@@ -2,7 +2,7 @@
   <view>
     <view class="chang_password">
       <view class="login_top">
-        <text class="icon iconfont">&#xe628;</text>
+        <navigator class="icon iconfont" url="/pages/user/install/main" open-type="navigateBack"  delta="1" hover-class="none">&#xe628;</navigator>
         <view class="describe">
           <view class="title">Hi~</view>
           <text>修改密码 ！</text>

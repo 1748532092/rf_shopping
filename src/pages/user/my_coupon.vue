@@ -8,13 +8,13 @@
 -->
 
 <template>
-<view>
-<view>
-    <scroll-view scroll-x="true" scroll-with-animation class="scroll_tab">
+  <view>
+    <view>
+      <scroll-view scroll-x="true" scroll-with-animation class="scroll_tab">
         <block v-for="(item, index) in tabBars" :key="index">
           <view
             :class="{ active: tabIndex == index }"
-             class="scroll_tab_item"
+            class="scroll_tab_item"
             @click="toggleTab(index)"
           >
             {{ item.name }}(0)
@@ -23,17 +23,13 @@
       </scroll-view>
     </view>
     <swiper class="swiper_box" :current="tabIndex" @change="tabChange">
-      <swiper-item class="item" v-for="(item,index) in tabBars" :key="index">
-       
+      <swiper-item class="item" v-for="(item, index) in tabBars" :key="index">
         <swiper-view class="content">
-             <empty_coupon></empty_coupon>
+          <empty_coupon></empty_coupon>
         </swiper-view>
-      </swiper-item> 
-      
-    </swiper> 
-  
-</view>
-  
+      </swiper-item>
+    </swiper>
+  </view>
 </template>
 
 <script>
@@ -88,7 +84,7 @@ export default {
 }
 .scroll_tab_item {
   display: inline-block; /* 必要，导航栏才能横向*/
-  margin: 10rpx 50rpx 0rpx ;
+  margin: 10rpx 50rpx 0rpx;
   font-size: 36rpx;
   height: 50rpx;
   text-align: center;

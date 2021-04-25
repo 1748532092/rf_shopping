@@ -2,7 +2,7 @@
 <template>
   <view class="my_order">
     <view class="search_box">
-      <view class="search_input">请输入订单关键字</view>
+      <navigator class="search_input" url="/pages/more_pages/search" hover-class="none">请输入订单关键字</navigator>
       <text class="icon iconfont">&#xe647;</text>
     </view>
     <view>
@@ -19,27 +19,7 @@
       </scroll-view>
     </view>
     <swiper class="swiper_box" :current="tabIndex" @change="tabChange">
-      <swiper-item class="item">
-        <scroll-view scroll-y="true" class="content">
-          <empty></empty>
-        </scroll-view>
-      </swiper-item>
-      <swiper-item class="item">
-        <scroll-view scroll-y="true" class="content">
-          <empty></empty>
-        </scroll-view>
-      </swiper-item>
-      <swiper-item class="item">
-        <scroll-view scroll-y="true" class="content">
-          <empty></empty>
-        </scroll-view>
-      </swiper-item>
-      <swiper-item class="item">
-        <scroll-view scroll-y="true" class="content">
-          <empty></empty>
-        </scroll-view>
-      </swiper-item>
-      <swiper-item class="item">
+      <swiper-item class="item" v-for="(item, index) in tabBars" :key="index">
         <scroll-view scroll-y="true" class="content">
           <empty></empty>
         </scroll-view>
@@ -61,23 +41,23 @@ export default {
       tabIndex: 0 /* 选中标签栏的序列,默认显示第一个 */,
       tabBars: [
         {
-          id: "1",
+          id: "0",
           name: "全部",
         },
         {
-          id: "2",
+          id: "1",
           name: "待付款",
         },
         {
-          id: "3",
+          id: "2",
           name: "待发货",
         },
         {
-          id: "4",
+          id: "3",
           name: "待收货",
         },
         {
-          id: "5",
+          id: "4",
           name: "评价",
         },
       ],
@@ -109,7 +89,7 @@ export default {
     line-height: 48rpx;
     margin-bottom: 20rpx;
     .search_input {
-      width: 100%;
+      width: 95%;
       background-color: #fff;
       border-radius: 40rpx;
       padding: 10rpx 0 10rpx 30rpx;

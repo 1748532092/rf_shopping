@@ -30,12 +30,12 @@
         <!-- 头部 -->
         <view class="tab_header">
           <view
-            class="navIndex ==1 ? 'item active' :'item'"
+            :class="navIndex ==1 ? 'item active' :'item'"
             @click="checkIndex(1)"
             >分值明细</view
           >
           <view
-            class="navIndex ==1 ? 'item active' :'item'"
+            :class="navIndex ==2 ? 'item active' :'item'"
             @click="checkIndex(2)"
             >分值提升</view
           >

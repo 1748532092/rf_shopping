@@ -10,7 +10,7 @@
   <view>
     <view class="tips_box">
       <text class="name">购买商品可获得积分奖励</text>
-      <view class="content"> 赚积分 </view>
+      <navigator class="content" url="/pages/classification/classification" open-type="switchTab" hover-class="none"> 赚积分 </navigator>
     </view>
   </view>
 </template>

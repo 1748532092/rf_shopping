@@ -8,10 +8,10 @@
 -->
 <template>
   <view class="about">
-    <view class="item" v-for="(item, index) in list" :key="index">
+    <navigator class="item" v-for="(item, index) in list" :key="index" :url="item.url">
       <text class="item_title">{{ item.name }}</text>
       <text class="icon iconfont">&#xe62e;</text>
-    </view>
+    </navigator>
     <view class="share">
       <view class="share_link">
         <view class="icon iconfont">&#xe658;</view>
@@ -36,18 +36,22 @@ export default {
         {
           id: "1",
           name: "商城介绍",
+          url: "/pages/user/about_shop/about_shop"
         },
         {
           id: "2",
           name: "注册协议",
+          url: "/pages/user/about_shop/reg_agreement"
         },
         {
           id: "3",
           name: "充值协议",
+           url: "/pages/user/about_shop/rec_agreement"
         },
         {
           id: "4",
           name: "隐私协议",
+           url: "/pages/user/about_shop/pri_agreement"
         },
       ],
     };

@@ -1,0 +1,19 @@
+<template>
+  <view class="content">关于商城的介绍</view>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+page {
+  background: #f8f8f8;
+}
+
+.content {
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+</style>

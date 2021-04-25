@@ -113,8 +113,9 @@ export default {
   .choose_color {
     display: block;
     overflow: hidden;
-    margin: 20rpx 30rpx;
+   
     border-radius: 20rpx;
+    width: 100vw;
     .item {
       position: relative;
       display: flex;
@@ -130,8 +131,8 @@ export default {
         .iconfont {
           color: #fa436a;
           display: inline-block;
-          margin-right: 10rpx;
-          width: 1.6rpx;
+          margin-right: 20rpx;
+         
           text-align: center;
         }
         .color {
@@ -161,7 +162,7 @@ export default {
         background-color: #fa436a;
         color: #fff;
         .iconfont{
-            color: #fa436a;
+            color: #fff;
             font-size: 28rpx;
         }
       }

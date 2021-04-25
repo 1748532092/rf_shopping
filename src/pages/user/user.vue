@@ -7,7 +7,7 @@
  * @FilePath: \rf-shopping\src\pages\user\user.vue
 -->
 <template>
-  <view>
+  <view >
     <view class="user_top">
       <view class="user_info_box">
         <view class="user_info">
@@ -103,38 +103,38 @@
           </view>
         </navigator>
         <view class="account_text">
-          <navigator class="item" url="/pages/user/serve/notice"  hover-class="none">
-            <view class="icon iconfont">&#xe60d;</view>
+          <navigator class="item_dif" url="/pages/user/serve/notice"  hover-class="none">
+            <view class="icon iconfont">&#xe619;</view>
             <view class="name">商城公告</view>
           </navigator>
-          <navigator class="item" url="/pages/user/serve/voucher_center"  hover-class="none">
-            <view class="icon iconfont">&#xe60c;</view>
+          <navigator class="item_dif" url="/pages/user/serve/voucher_center"  hover-class="none">
+            <view class="icon iconfont">&#xe655;</view>
             <view class="name">领券中心</view>
           </navigator>
-          <navigator class="item" url="/pages/user/serve/address"  hover-class="none">
-            <view class="icon iconfont">&#xe641;</view>
+          <navigator class="item_dif" url="/pages/user/serve/address"  hover-class="none">
+            <view class="icon iconfont">&#xe613;</view>
             <view class="name">地址管理</view>
           </navigator>
         </view>
         <view class="account_text">
-          <navigator class="item" url="/pages/user/serve/collection"  hover-class="none">
-            <view class="icon iconfont">&#xe639;</view>
+          <navigator class="item_dif" url="/pages/user/serve/collection"  hover-class="none">
+            <view class="icon iconfont">&#xe60a;</view>
             <view class="name">我的收藏</view>
           </navigator>
-          <view class="item">
-            <view class="icon iconfont">&#xe85d;</view>
+          <view class="item_dif">
+            <view class="icon iconfont">&#xe658;</view>
             <view class="name">分享</view>
           </view>
-          <navigator class="item" url="/pages/user/serve/live_broadcast"  hover-class="none">
-            <view class="icon iconfont">&#xe85d;</view>
+          <navigator class="item_dif" url="/pages/user/serve/live_broadcast"  hover-class="none">
+            <view class="icon iconfont">&#xe606;</view>
             <view class="name">直播</view>
           </navigator>
         </view>
-        <view class="account_text">
-          <avigator class="account_title" url="/pages/user/install/main" hover-class="none">
-            <view class="icon iconfont">&#xe639;</view>
+        <view class="set">
+          <navigator url="/pages/user/install/main" hover-class="none">
+            <view class="icon iconfont">&#xe614;</view>
             <view class="name">设置</view>
-          </avigator>
+          </navigator>
         </view>
       </view>
     </view>
@@ -146,6 +146,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+
 .user_top {
   display: flex;
   flex-direction: column;
@@ -262,8 +263,9 @@ export default {};
     display: flex;
     justify-content: space-around;
     color: #606266;
-    font-size: 22rpx;
+    font-size: 24rpx;
     height: 130rpx;
+    margin: 20rpx 0 10rpx 0;
     .item {
       text-align: center;
       margin: auto 0;
@@ -272,6 +274,27 @@ export default {};
         color: #fa436a;
       }
     }
+    .item_dif{
+      width: 33.33%;
+      text-align: center;
+       .iconfont {
+        font-size: 50rpx;
+        color: #fa436a;
+      }
+    }
+    
+    }
+    .set{
+      margin-left: 85rpx;
+      .iconfont{
+        color: #fa436a;
+        font-size: 50rpx;
+      }
+      .name{
+        color: #606266;
+    font-size: 24rpx;
+      }
+    }
   }
-}
+
 </style>

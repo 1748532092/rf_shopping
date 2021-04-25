@@ -56,7 +56,8 @@
 		{
 			"path": "pages/user/user",
 			"style": {
-				"navigationStyle": "custom"
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
 			}
 		},
 		//登录页面
@@ -317,16 +318,45 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
+		},
+		//关于商城的介绍界面
+		{
+			"path": "pages/user/about_shop/about_shop",
+			"style": {
+				"navigationBarTitleText": "关于商城",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//注册协议界面
+		{
+			"path": "pages/user/about_shop/reg_agreement",
+			"style": {
+				"navigationBarTitleText": "注册协议",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//充值协议界面
+		{
+			"path": "pages/user/about_shop/rec_agreement",
+			"style": {
+				"navigationBarTitleText": "充值协议",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//隐私协议界面
+		{
+			"path": "pages/user/about_shop/pri_agreement",
+			"style": {
+				"navigationBarTitleText": "充值协议",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
 		}
-		// //个人资料界面
-		// {
-		// 	"path": "pages/user/install/personal_data",
-		// 	"style": {
-		// 		"navigationBarTitleText": "个人资料",
-		// 		"navigationBarTextStyle": "black",
-		// 		"navigationBarBackgroundColor": "#fff"
-		// 	}
-		// }
+		
+
 
 
 	],
