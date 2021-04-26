@@ -15,7 +15,7 @@
       :style="{ paddingTop: statusBarHeight + 'px' }"
     ></view>
     <view class="search_scan">
-      <text class="icon iconfont">&#xe61b;</text>
+      <navigator class="icon iconfont" url="/pages/home_page/home_page" open-type="navigateBack" hover-class="none">&#xe61b;</navigator>
       <view class="search_box">
         <view class="search_img">
           <view class="icon iconfont">&#xe647;</view>

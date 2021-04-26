@@ -371,6 +371,23 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
+		},
+		//创建订单界面
+		{
+			"path": "pages/more_pages/create_order",
+			"style": {
+				"navigationBarTitleText": "创建订单",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		//支付界面
+		{
+			"path": "pages/more_pages/payment",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+			}
 		}
 		
 		

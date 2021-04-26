@@ -1,7 +1,14 @@
 
 <template name="product_details">
   <view class="product_details">
-    <navigator class="back_btn icon iconfont" url="/pages/home_page/home_page" open-type="navigateBack"  delta="1" hover-class="none">&#xe628;</navigator>
+    <navigator
+      class="back_btn icon iconfont"
+      url="/pages/home_page/home_page"
+      open-type="navigateBack"
+      delta="1"
+      hover-class="none"
+      >&#xe628;</navigator
+    >
     <view class="product_img">
       <swiper>
         <swiper-item class="swiper_item">
@@ -123,21 +130,50 @@
     </view>
     <view class="page_bottom">
       <view class="left">
-        <view class="item">
+        <navigator
+          class="item"
+          url="/pages/home_page/home_page"
+          open-type="switchTab"
+          hover-class="none"
+        >
           <view class="icon iconfont">&#xe603;</view>
           <text>首页</text>
-        </view>
-        <view class="item">
+        </navigator>
+        <navigator
+          class="item"
+          url="/pages/cart/cart"
+          open-type="switchTab"
+          hover-class="none"
+        >
           <view class="icon iconfont">&#xe605;</view>
           <text>购物车</text>
-        </view>
+        </navigator>
         <view class="item">
           <view class="icon iconfont">&#xe709;</view>
           <text>客服</text>
         </view>
       </view>
       <view class="right">
-        <button class="buy_now">立即购买</button>
+        <button class="buy_now" @click="show = true">立即购买</button>
+        <u-popup mode="bottom" v-model="show">
+          <view class="content">
+            <view class="product_inf">
+              <image class="img" src="../static/goods.jpg"></image>
+              <view class="pop_right">
+                <view class="title item">狗狗零食</view>
+                <view class="item price">该商品仅需10000积分</view>
+                <view class="item">库存:94包</view>
+              </view>
+            </view>
+            <view class="pur_num">
+              <text>购买数量</text>
+              <u-number-box v-model="value" @change="valChange"></u-number-box>
+            </view>
+            <view style="margin-top: 20rpx">
+              <navigator class="ok_btn" @click="show = false" url="/pages/more_pages/create_order">完成</navigator>
+            </view>
+          </view>
+        </u-popup>
         <button class="add_cart">加入购物车</button>
       </view>
     </view>
@@ -145,7 +181,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      show: false,
+      value: 1,
+    };
+  },
+  methods: {
+    valChange(e) {
+      console.log("当前值为: " + e.value);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -403,6 +451,50 @@ export default {};
         color: #fff;
         border-top-left-radius: 2em;
         border-bottom-left-radius: 2em;
+      }
+      .content {
+        padding: 24rpx;
+        font-size: 28rpx;
+        .product_inf {
+          display: flex;
+          border-bottom: 1rpx solid #e7e2e2;
+          .img {
+            width: 250rpx;
+            height: 150rpx;
+          }
+          .pop_right {
+            text-align: left;
+            .title {
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+            .item {
+              margin: 10rpx;
+            }
+            .price {
+              color: #fa436a;
+            }
+          }
+        }
+        .pur_num {
+          margin-top: 20rpx;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .ok_btn {
+          width: 90%;
+          font-size: 30rpx;
+          border-radius: 2em;
+          height: 60rpx;
+          line-height: 60rpx;
+          background: #fa436a;
+          color: #fff;
+          margin-top: 40rpx;
+          text-align: center;
+          margin: 0 auto;
+        }
       }
       .add_cart {
         font-size: 24rpx;

@@ -42,6 +42,7 @@ export default {
 .pages {
   background: #f8f8f8;
   height: 100%;
+  padding-top: 10rpx;
 }
 .address_details {
   align-items: center;

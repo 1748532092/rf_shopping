@@ -62,7 +62,7 @@
 
     <!-- 新品上市 -->
     <view class="new_products_modules" v-for="(item,index) in sort" :key="index">
-      <view class="new_products_top">
+      <navigator class="new_products_top"  url="/pages/more_pages/screen" hover-class="none">
         <view class="icon iconfont">{{item.icon}}</view>
         <view class="new_products_top_right">
           <view>
@@ -71,7 +71,7 @@
           </view>
           <view class="icon iconfont">&#xe62e;</view>
         </view>
-      </view>
+      </navigator>
       <view class="new_products_content">
         <navigator class="goods_item" v-for="items in 4" :key="items" url="/components/product_details">
           <view class="show_img">

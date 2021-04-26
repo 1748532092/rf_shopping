@@ -8,9 +8,10 @@
 -->
 <template>
   <view class="help">
-    <u-collapse :item-style="itemStyle">
-      <u-collapse-item
-        class="item"
+    
+    <u-collapse :item-style="itemStyle" accordion="false">
+     <view class="item">
+       <u-collapse-item
         :title="item.head"
         v-for="(item, index) in itemList"
         :key="index"
@@ -20,6 +21,8 @@
           <text class="icon iconfont">&#xe62e;</text>
         </view>
       </u-collapse-item>
+    </view>
+     
     </u-collapse>
   </view>
 </template>
@@ -42,8 +45,8 @@ export default {
       ],
       itemStyle: {
         background: "white",
-        marginLeft: "50rpx",
-        marginTop: "20rpx",
+        margin: "20rpx",
+        padding: "20rpx"
       },
     };
   },
@@ -55,10 +58,15 @@ export default {
   padding-top: 20rpx;
   background: #f8f8f8;
   height: 100%;
+  font-size: 28rpx;
   .item {
+  
     .item_content {
+      position: relative;
     }
     .iconfont {
+position: absolute;
+right: 0;
     }
   }
 }

@@ -26,7 +26,12 @@
       </view>
     </view>
     <view class="log_out">
-        <text class="btn_text">退出登录</text>
+      <view class="btn_text">
+		<u-modal  :show-title="false"  :show-cancel-button="true" v-model="show" :content="content" ></u-modal>
+		<u-button  @click="open">
+			退出登录
+		</u-button>
+	</view>
     </view>
   </view>
 </template>
@@ -34,6 +39,8 @@
 export default {
   data(){
     return{
+      show: false,
+				content: '确定要退出登录？', 
       //  "修改密码","授权管理","发票管理","开票历史","清楚缓存","关于商城","站点帮助","意见反馈"
       list:[
         {
@@ -74,7 +81,12 @@ export default {
           },
         ]
     }
-  }
+  },
+  methods: {
+			open() {
+				this.show = true;
+			}
+		}
 };
 </script>
 <style lang="scss" scoped>
