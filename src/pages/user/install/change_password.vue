@@ -36,8 +36,8 @@
             </view>
           </view>
            <view class="login_tips">
-            <text>马上登陆</text>
-            <text>返回主页</text>
+            <navigator url="/pages/more_pages/existing_account" hover-class="none">马上登陆</navigator>
+            <navigator url="/pages/home_page/home_page" open-type="switchTab" hover-class="none">返回主页</navigator>
           </view>
           <button class="login_btn">修改密码</button>
         </view>

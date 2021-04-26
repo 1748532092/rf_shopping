@@ -73,7 +73,7 @@
         </view>
       </view>
       <view class="new_products_content">
-        <view class="goods_item" v-for="items in 4" :key="items">
+        <navigator class="goods_item" v-for="items in 4" :key="items" url="/components/product_details">
           <view class="show_img">
             <image class="goods_img" src="../static/goods.jpg"></image>
             <image class="goods_label" src="../static/pinkage.png"></image>
@@ -98,7 +98,7 @@
             </view>
             <view class="icon iconfont">&#xe602; </view>
           </view>
-        </view>
+        </navigator>
       </view>
     </view>
   </view>
@@ -197,7 +197,7 @@ li {
       margin-left: 40rpx;
       position: relative;
       line-height: 80rpx;
-      color: red;
+      color: #fa436a;
     }
   }
 }
@@ -237,7 +237,7 @@ li {
     padding-bottom: 20rpx;
     .iconfont {
       margin: auto 30rpx;
-      color: rgb(241, 70, 176);
+      color: #fa436a;
       font-size: 50rpx;
     }
     .new_products_top_right {

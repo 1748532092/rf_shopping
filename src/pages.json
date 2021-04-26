@@ -354,7 +354,25 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#fff"
 			}
+		},
+		//筛选界面
+		{
+			"path": "pages/more_pages/screen",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationStyle": "custom"
+			}
+		},
+		//新增地址界面
+		{
+			"path": "pages/more_pages/add_address",
+			"style": {
+				"navigationBarTitleText": "新增收货地址",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#fff"
+			}
 		}
+		
 		
 
 

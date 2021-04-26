@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:45:00
- * @LastEditTime: 2021-04-25 18:36:27
+ * @LastEditTime: 2021-04-26 14:07:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\user\user.vue
@@ -146,7 +146,9 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-
+page{
+  height: 100%;
+}
 .user_top {
   display: flex;
   flex-direction: column;
@@ -230,8 +232,7 @@ export default {};
   .account_module {
     background-color: #fff;
     margin-bottom: 20rpx;
-    height: 200rpx;
-
+    padding-bottom: 20rpx;
     .account_title {
       display: flex;
       height: 50rpx;
@@ -264,7 +265,6 @@ export default {};
     justify-content: space-around;
     color: #606266;
     font-size: 24rpx;
-    height: 130rpx;
     margin: 20rpx 0 10rpx 0;
     .item {
       text-align: center;
@@ -277,6 +277,7 @@ export default {};
     .item_dif{
       width: 33.33%;
       text-align: center;
+      margin: 20rpx 0;
        .iconfont {
         font-size: 50rpx;
         color: #fa436a;

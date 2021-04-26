@@ -2,7 +2,7 @@
   <view>
     <view class="existing_account_login">
       <view class="login_top">
-        <view class="icon iconfont">&#xe628;</view>
+        <navigator class="icon iconfont" url="/pages/more_pages/login" open-type="navigateBack"  delta="1" hover-class="none">&#xe628;</navigator>
         <view class="describe">
           <view class="title">Hi~</view>
           <text>RF商城欢迎您</text>

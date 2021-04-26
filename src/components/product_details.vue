@@ -1,7 +1,7 @@
 
 <template name="product_details">
   <view class="product_details">
-    <text class="back_btn icon iconfont">&#xe628;</text>
+    <navigator class="back_btn icon iconfont" url="/pages/home_page/home_page" open-type="navigateBack"  delta="1" hover-class="none">&#xe628;</navigator>
     <view class="product_img">
       <swiper>
         <swiper-item class="swiper_item">

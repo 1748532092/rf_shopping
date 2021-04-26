@@ -55,7 +55,18 @@
   </view>
 </template>
 <script>
-export default {};
+export default {
+  data(){
+    return{
+      date:""
+    }
+  },
+  methods:{
+    bindDateChange(e){
+      this.date=e.detail.value
+    }
+  }
+};
 </script>
 <style lang="scss" scoped>
 .user_information {

@@ -2,7 +2,7 @@
   <view>
     <view class="existing_account_login">
       <view class="login_top">
-        <text class="icon iconfont">&#xe628;</text>
+        <navigator class="icon iconfont" url="/pages/more_pages/login" open-type="navigateBack"  delta="1" hover-class="none">&#xe628;</navigator>
         <view class="describe">
           <view class="title">Hi~</view>
           <text>RF商城欢迎您</text>
@@ -28,7 +28,7 @@
           </view>
           <view class="login_tips">
             <text>验证码登录</text>
-            <text>忘记密码?</text>
+            <navigator url="/pages/user/install/change_password" hover-class="none">忘记密码?</navigator>
           </view>
           <button class="login_btn" >登录</button>
         </view>
