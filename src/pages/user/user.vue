@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-12 15:45:00
- * @LastEditTime: 2021-04-26 14:07:31
+ * @LastEditTime: 2021-04-27 09:11:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \rf-shopping\src\pages\user\user.vue
@@ -228,6 +228,7 @@ page{
     left: 0;
     top: -25rpx;
     height: 36rpx;
+    width: 100%;
   }
   .account_module {
     background-color: #fff;
