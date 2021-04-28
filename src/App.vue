@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-15 14:23:42
- * @LastEditTime: 2021-04-22 15:32:52
+ * @LastEditTime: 2021-04-28 18:00:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \TinyShop-UniApp-based:\Desktop\rf_shopping\src\App.vue
@@ -30,5 +30,6 @@ export default {
 @import "./static/css/iconfont/icon.css";
 page{
   height: 100%;
+  background: #f8f8f8;
 }
 </style>
